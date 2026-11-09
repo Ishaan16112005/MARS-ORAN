@@ -1,0 +1,97 @@
+{
+  "project": "MARS-O-RAN",
+  "version": "2.0-revision1",
+  "simulation": {
+    "duration_s": 300,
+    "time_step_s": 1,
+    "seed": 17
+  },
+  "radio": {
+    "total_prbs": 100,
+    "prb_bandwidth_hz": 180000,
+    "spectral_efficiency_factor": 0.62,
+    "channel_uses_per_prb": 1800,
+    "min_slice_prbs": {
+      "SC": 15,
+      "SV": 15,
+      "SX": 10,
+      "SM": 10
+    },
+    "max_slice_prbs": {
+      "SC": 60,
+      "SV": 60,
+      "SX": 50,
+      "SM": 40
+    },
+    "scale_max_with_budget": false,
+    "base_snr_db": {
+      "SC": 18,
+      "SV": 16,
+      "SX": 13,
+      "SM": 12
+    }
+  },
+  "edge": {
+    "total_compute_units": 100,
+    "compute_efficiency": 0.72,
+    "active_task_bonus": 0.15
+  },
+  "backhaul": {
+    "base_latency_ms": 4.0,
+    "jitter_ms": 1.5
+  },
+  "incident": {
+    "start_time_s": 20,
+    "initial_severity": 0.2,
+    "severity_growth_per_s": 0.0015,
+    "shock_probability": 0.018,
+    "shock_duration_s": 5
+  },
+  "env": {
+    "edge_bonus_all_policies": true,
+    "repair_respects_change_limit": true,
+    "concurrent_tasks": false
+  },
+  "controller": {
+    "alpha_urgency": 0.4,
+    "alpha_hazard": 0.3,
+    "alpha_critical_path": 0.2,
+    "alpha_aoi": 0.1,
+    "urgency_epsilon_s": 2.0,
+    "urgency_ref_s": 40.0,
+    "demand_weight": 0.35,
+    "max_reconfig_per_step": 16,
+    "risk_aversion": 0.55,
+    "mission_aware_bonus": 0.18
+  },
+  "mars_v0": {
+    "risk_reserve_prbs": 8,
+    "reconfig_penalty": 0.025,
+    "hold_time_s": 4
+  },
+  "mars": {
+    "temperature": 0.8,
+    "reserve_scale": 0.0,
+    "reserve_split": {
+      "SC": 0.6,
+      "SV": 0.4
+    },
+    "damping": 0.25,
+    "hold_time_s": 8,
+    "slack_ref_s": 10.0,
+    "release_on_task_change": true
+  },
+  "myopic": {
+    "reconfig_weight": 0.01
+  },
+  "reliability": {
+    "radio_floor": 0.9,
+    "edge_floor": 0.94,
+    "backhaul_floor": 0.96
+  },
+  "aoi": {
+    "fresh_update_aoi_s": 1.0,
+    "max_safety_aoi_s": 4.0,
+    "max_control_aoi_s": 2.0
+  }
+}

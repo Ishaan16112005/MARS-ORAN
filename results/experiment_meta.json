@@ -1,0 +1,11 @@
+{
+  "seeds": 30,
+  "policies": [
+    "STATIC",
+    "PROPORTIONAL",
+    "MISSION_AWARE",
+    "MARS_RISK_AWARE"
+  ],
+  "duration_s": 300,
+  "note": "Synthetic digital-twin model; not a measurement of commercial O-RAN performance."
+}

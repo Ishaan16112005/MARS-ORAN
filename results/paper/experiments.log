@@ -1,0 +1,33 @@
+[1] Main experiment: 3 operating points x 6 policies x 300 seeds
+[2] Sweeps (100 seeds)
+  sweep total_prbs: 10 values x 6 policies x 100 seeds
+  sweep total_prbs_scaledcaps: 10 values x 6 policies x 100 seeds
+  sweep initial_severity: 7 values x 6 policies x 100 seeds
+  sweep shock_probability: 7 values x 6 policies x 100 seeds
+  sweep deadline_scale: 8 values x 6 policies x 100 seeds
+  sweep workload_scale: 8 values x 6 policies x 100 seeds
+  sweep grid_B60: 5 values x 6 policies x 100 seeds
+  sweep grid_B80: 5 values x 6 policies x 100 seeds
+  sweep grid_B100: 5 values x 6 policies x 100 seeds
+  sweep grid_B120: 5 values x 6 policies x 100 seeds
+[3] MARS parameter sweeps (100 seeds, all operating points)
+  sweep mars_temperature_A_benign: 6 values x 1 policies x 100 seeds
+  sweep mars_temperature_B_severe: 6 values x 1 policies x 100 seeds
+  sweep mars_temperature_C_concurrent: 6 values x 1 policies x 100 seeds
+  sweep mars_reserve_scale_A_benign: 5 values x 1 policies x 100 seeds
+  sweep mars_reserve_scale_B_severe: 5 values x 1 policies x 100 seeds
+  sweep mars_reserve_scale_C_concurrent: 5 values x 1 policies x 100 seeds
+  sweep mars_damping_A_benign: 5 values x 1 policies x 100 seeds
+  sweep mars_damping_B_severe: 5 values x 1 policies x 100 seeds
+  sweep mars_damping_C_concurrent: 5 values x 1 policies x 100 seeds
+  sweep mars_hold_time_s_A_benign: 8 values x 1 policies x 100 seeds
+  sweep mars_hold_time_s_B_severe: 8 values x 1 policies x 100 seeds
+  sweep mars_hold_time_s_C_concurrent: 8 values x 1 policies x 100 seeds
+  sweep mars_max_reconfig_per_step_A_benign: 6 values x 1 policies x 100 seeds
+  sweep mars_max_reconfig_per_step_B_severe: 6 values x 1 policies x 100 seeds
+  sweep mars_max_reconfig_per_step_C_concurrent: 6 values x 1 policies x 100 seeds
+[4] Ablation (300 seeds, all operating points)
+/home/ishaan/Projects/MARS_ORAN_Code_and_Research_Paper/src/experiments.py:460: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  fig.tight_layout(); save(fig, 'fig_ablation')
+[5] Figures
+Done in 331 s. CSVs -> /home/ishaan/Projects/MARS_ORAN_Code_and_Research_Paper/results/paper, figures -> /home/ishaan/Projects/MARS_ORAN_Code_and_Research_Paper/figures/paper

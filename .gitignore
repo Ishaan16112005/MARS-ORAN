@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# Build output (regenerate from paper/)
+Overleaf_Source.zip
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

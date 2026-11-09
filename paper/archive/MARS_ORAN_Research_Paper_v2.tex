@@ -1,0 +1,408 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,graphicx,url,cite,multirow}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{figures/}}
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+% Many full-width figures: allow more pending floats and fuller float pages.
+\extrafloats{100}
+\renewcommand{\topfraction}{0.9}\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\textfraction}{0.07}\renewcommand{\floatpagefraction}{0.75}\renewcommand{\dblfloatpagefraction}{0.75}
+
+\title{MARS-O-RAN: Mission-Aware Risk-Constrained Elastic Network Slicing for Emergency Robotics, with Statistical and Edge-Case Evaluation}
+\author{\IEEEauthorblockN{Ishaan Jayaram Shetty\IEEEauthorrefmark{1},
+Prashant Kumar\IEEEauthorrefmark{1},
+Himanshu Kumar Sonkar\IEEEauthorrefmark{1}, and
+Naman Kumar\IEEEauthorrefmark{2}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Department of Electronics and Communication Engineering, IIIT Dharwad, India}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}Department of Computer Science and Engineering, IIIT Dharwad, India}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+When robots respond to an industrial accident, the radio link that matters most shifts from one minute to the next. In our gas-leak scenario, five dependent steps (detecting the gas, localizing its source, driving a ground robot to the valve, inspecting the valve, and closing it) each impose their own deadline, data-freshness, and reliability target on a shared cell. We introduce MARS-O-RAN, a digital twin in the style of an Open Radio Access Network (O-RAN) that splits physical resource blocks (PRBs) among four slices according to mission progress and risk. Four policies are compared: STATIC, PROPORTIONAL, MISSION-AWARE, and the proposed MARS controller. Over 30 paired random-seed runs per policy, both mission-oriented policies raise the task-level mission-success score from 0.187 (STATIC) to above 0.70 and cut mean mission loss by about 26 units in every paired seed (Wilcoxon $p<10^{-5}$). Relative to MISSION-AWARE, MARS reduces reconfiguration cost by 43.7\% in all 30 seeds, while its success score (0.707 vs.\ 0.727) and CVaR$_{0.90}$ loss (23.3 vs.\ 24.5) are statistically indistinguishable. We further stress the controllers with 11 edge-case studies covering PRB budgets from the feasibility limit to twice nominal, incident severity, network-shock rate, deadline tightness, workload scaling, controller parameters, and an extended 30-seed ablation. The edge cases reveal that MARS gains up to 8.7 percentage points under mild incidents but loses up to 16 points when slack is tight, that the final valve-manipulation task is infeasible under the nominal reliability model for every policy, that additional PRBs can reduce success through radio--edge coupling, and that the criticality weights are inert because the allocation saturates at slice bounds. The study is a reproducible software simulation, not a field validation of 5G/6G or O-RAN equipment.
+\end{abstract}
+
+\begin{IEEEkeywords}
+O-RAN, network slicing, emergency robotics, mission-aware control, edge computing, Age of Information, CVaR, edge-case evaluation.
+\end{IEEEkeywords}
+
+%=====================================================================
+\section{Introduction}
+A ground robot closing a leaking valve, a drone streaming camera frames to an edge server, responders viewing hazard overlays, and a field of gas sensors can all share one private cell during an industrial emergency. Their demands conflict, and which one deserves the spectrum depends on where the mission stands. Camera uplink dominates while the leak is being located; a few kilobits of control traffic, delivered quickly and reliably, matter more once the robot grips the valve. A slicing policy that looks only at instantaneous traffic volume cannot see this shift.
+
+Open RAN makes this kind of application-driven control architecturally plausible. Its RAN Intelligent Controllers run optimization loops at two speeds: a near-real-time controller that acts on the base station over E2, and a slower controller that issues policies over A1 \cite{oranarch,oranwg3,polese}. A mission-aware slicing rule would naturally sit in the faster loop. We study the logic of such a rule inside a Python simulation; no E2 or A1 messages are exchanged and no RIC software is deployed.
+
+We ask two questions. First, \emph{can tying PRB shares to the currently executable mission step improve task completion over fixed or demand-driven slicing?} Second, \emph{under which budgets, incident severities, deadlines, and workloads does that advantage disappear or reverse?} The second question receives most of our attention, because a controller tuned at one operating point says little about its behavior elsewhere.
+
+\textbf{Contributions.} (1) A mission-task graph that links slice demand to task dependencies; (2) a heuristic allocation rule driven by deadline urgency, hazard, critical-path status, freshness, and risk, plus a risk reserve and stability constraints; (3) a joint evaluation model for radio service, edge computation, deadline, freshness, reliability, reconfiguration, and tail loss; (4) a statistically grounded comparison of four policies using paired seeds, bootstrap confidence intervals, and signed-rank tests; and (5) a systematic edge-case study that maps the operating envelope of each policy and identifies the model mechanisms responsible for failures. Contribution (5) is new in this version and changes several conclusions of the earlier draft, which we report explicitly.
+
+%=====================================================================
+\section{Related Work and Background}
+\textbf{Open RAN control.} The O-RAN specifications separate a near-real-time controller from a non-real-time one \cite{oranarch,oranwg3}, and Polese \emph{et al.} review the interfaces and the learning-based applications proposed for both \cite{polese}. Our simulator mirrors this split only loosely: scenario settings are fixed before a run, playing the role of a slow policy, and a per-second heuristic plays the role of the fast loop.
+
+\textbf{Slicing with guarantees.} Much recent O-RAN slicing work optimizes service-level agreements with reinforcement learning. SafeSlice, for instance, adds a safety layer so that a deep RL agent respects both cumulative and per-step latency limits \cite{safeslice}. Baguer \emph{et al.} show that slicing over Open RAN can sustain beyond-visual-line-of-sight drone operation \cite{bvlos}. Both target per-slice performance targets; neither models a sequence of dependent tasks whose value changes as the mission advances, which is the gap MARS-O-RAN explores.
+
+\textbf{Freshness, short packets, and tail risk.} We borrow three tools from adjacent fields. Age of Information quantifies how stale the newest delivered update is \cite{kaul,aoi}; a robot steering toward a valve is better served by a recent position than by a large but outdated batch. Finite-blocklength theory shows that short control packets cannot reach Shannon capacity at low error rates \cite{polyanskiy}, which motivates the rate penalty in our radio model. Conditional value at risk summarizes the worst part of a loss distribution and can be optimized through a convex reformulation \cite{cvar}; we use it only to score simulated outcomes. Validating our abstractions with a packet-level simulator such as 5G-LENA \cite{lena} remains future work.
+
+%=====================================================================
+\section{Scenario and System Model}
+\subsection{Network and Slices}
+The digital twin models one cell and one edge server. The radio budget is $B=100$ PRBs in the nominal scenario. Let $b_s(t)$ be the PRBs given to slice $s\in\mathcal{S}=\{\mathrm{SC},\mathrm{SV},\mathrm{SX},\mathrm{SM}\}$ (robot control, perception video, responder XR, safety sensing) at step $t$ (1\,s). The allocation must satisfy
+\begin{equation}
+\sum_{s\in\mathcal{S}} b_s(t)\le B,\qquad B_s^{\min}\le b_s(t)\le B_s^{\max},
+\label{eq:prb}
+\end{equation}
+with $B^{\min}=(15,15,10,10)$ and $B^{\max}=(60,60,50,40)$. Hence $\sum_s B_s^{\min}=50$ is the smallest feasible budget and $\sum_s B_s^{\max}=210$ the largest usable one; both limits are probed in Section~\ref{sec:edge}.
+
+\subsection{Mission Task Graph}
+The mission is a chain-structured DAG $\mathcal{G}=(\mathcal{K},\mathcal{E})$ with tasks $K_1$ gas detection (SV), $K_2$ source localization (SM), $K_3$ UGV navigation (SC), $K_4$ valve inspection (SM), and $K_5$ valve manipulation (SC). A task may start only after its predecessor finishes, and only one task executes at a time. Each task $k$ has deadline $D_k$, bit workload $L_k$, compute workload $C_k$, value $w_k$, hazard weight $h_k$, freshness limit $\Delta_k^{\max}$, and failure budget $\epsilon_k^{\max}$ (Table~\ref{tab:tasks}).
+
+\begin{table}[t]
+\centering
+\caption{Mission tasks (synthetic configuration values).}
+\label{tab:tasks}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcrrrrrr}
+\toprule
+Task & Slice & $D_k$ (s) & $L_k$ (Mb) & $C_k$ & $w_k$ & $h_k$ & $\epsilon_k^{\max}$\\
+\midrule
+$K_1$ detection & SV & 36 & 0.2 & 20 & 5 & 0.70 & 0.08\\
+$K_2$ localization & SM & 86 & 12.0 & 120 & 8 & 0.80 & 0.10\\
+$K_3$ navigation & SC & 125 & 1.2 & 55 & 10 & 0.95 & 0.06\\
+$K_4$ inspection & SM & 168 & 7.0 & 100 & 9 & 0.90 & 0.08\\
+$K_5$ manipulation & SC & 205 & 1.0 & 50 & 12 & 1.00 & 0.04\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Incident, Radio, and Edge Model}
+The incident starts at $t_0=20$\,s. Severity is $\sigma(t)=0.05$ before $t_0$ and $\sigma(t)=\mathrm{clip}(\sigma_0+0.0015(t-t_0)+n_t,0,1)$ afterwards, with $\sigma_0=0.6$ and $n_t\sim\mathcal{N}(0,0.025^2)$. A network shock of 5\,s starts with probability $p_{\mathrm{sh}}(1+\sigma)$ per step ($p_{\mathrm{sh}}=0.018$) and degrades channel, edge, and backhaul factors. The service rate of the active task's slice is
+\begin{equation}
+R_s(t)=b_s(t)\,W_{\mathrm{PRB}}\log_2(1+\gamma_s(t))\,\eta\,h_s(t)\,F_s^{\mathrm{FBL}},
+\label{eq:rate}
+\end{equation}
+with $W_{\mathrm{PRB}}=180$\,kHz, $\eta=0.62$, channel factor $h_s$, and a finite-blocklength correction $F_s^{\mathrm{FBL}}\in[0.55,1]$. Edge capacity $C_{\mathrm{edge}}=100$ units is shared in proportion to radio share,
+\begin{equation}
+f_s(t)=C_{\mathrm{edge}}\,\frac{b_s(t)}{B}\,(1+0.15\,\mathbf{1}[s=s_{\mathrm{act}}]),
+\label{eq:edge}
+\end{equation}
+renormalized to $C_{\mathrm{edge}}$; the 15\% bonus applies only to the mission-oriented policies. Equation~\eqref{eq:edge} couples radio and edge decisions, which matters for the budget edge case in Section~\ref{sec:edge}. A task finishes when both its remaining bits and its remaining compute reach zero.
+
+\subsection{Freshness, Reliability, and Task Success}
+AoI resets to 1\,s when a slice receives at least its minimum (plus 5 PRBs for SC/SV) and otherwise increases by 1\,s. End-to-end reliability is the product of radio, edge, and backhaul terms,
+\begin{equation}
+\begin{aligned}
+P^{\mathrm{succ}} &= P^{\mathrm{radio}}\,P^{\mathrm{edge}}\,P^{\mathrm{bh}},\\
+P^{\mathrm{radio}} &= 0.999-0.030\sigma-\ldots,\\
+P^{\mathrm{edge}} &= 0.997-0.025\sigma-\ldots,\\
+P^{\mathrm{bh}} &= 0.998-0.020\sigma-\ldots,
+\end{aligned}
+\label{eq:rel}
+\end{equation}
+where the omitted terms are load- and shock-dependent penalties. Task $k$ succeeds ($q_k=1$) only if it meets its deadline, its slice AoI is within $\Delta_k^{\max}$, and $P^{\mathrm{succ}}\ge 1-\epsilon_k^{\max}$.
+
+\subsection{Metrics}
+The \emph{mission-success score} is the number of successful tasks divided by five (unobserved tasks count as failures). The achieved value of a task is $w_k$ on success, $0.45w_k$ if only the deadline was met, and $0.10w_k$ otherwise; the \emph{mission loss} is
+\begin{equation}
+L=\sum_k w_k(1+0.25h_k) - \sum_k \text{(achieved value)}_k,
+\label{eq:loss}
+\end{equation}
+which ranges from $9.875$ (all tasks succeed) to $53.875$ (no task observed). The reconfiguration cost is $\sum_t\sum_s|b_s(t)-b_s(t-1)|$. Tail risk is
+\begin{equation}
+\mathrm{CVaR}_{\beta}(L)=\min_{\eta}\Big[\eta+\tfrac{1}{1-\beta}\mathbb{E}[(L-\eta)^+]\Big],
+\label{eq:cvar}
+\end{equation}
+estimated empirically as the mean of losses at or above the $\beta$-quantile across seeds \cite{cvar}.
+
+%=====================================================================
+\section{Policies and the MARS Controller}
+\subsection{Dynamic Mission Criticality}
+For the executable task $k$,
+\begin{equation}
+\chi_k(t)=w_k\big[1+\alpha_u U_k+\alpha_h H_k+\alpha_{cp}I_{cp,k}+\alpha_a A_k+\alpha_r R_k\big],
+\label{eq:criticality}
+\end{equation}
+where $U_k=\min\{1,40/(D_k-t+2)\}$ is normalized urgency, $A_k$ is normalized AoI pressure, $I_{cp,k}\in\{0.35,0.6,1\}$ marks critical-path position, and $H_k=R_k=\sigma h_k$. Note that in the current implementation the hazard and risk terms are the same quantity, so $\alpha_h$ and $\alpha_r$ act as a single coefficient.
+
+\subsection{Allocation Policies}
+STATIC uses fixed shares $(0.29,0.26,0.18,0.27)$. PROPORTIONAL uses demand shares. MISSION-AWARE scores each slice by $\chi_k$ of its executable task plus $0.35$ times its demand share, adds an 18\% bonus to the best slice, and maps scores to weights with a softmax. MARS replaces the bonus with (i) a severity-dependent risk reserve added to SC (45\%), SV (35\%), and the target slice (30\%), scaled by risk aversion $\rho$; (ii) a penalty proportional to the deviation of the previous allocation from the equal share of 25 PRBs; and (iii) a hold time $T_h=4$\,s during which the allocation is frozen. All policies are limited to $\Delta_{\max}=16$ PRBs of change per slice per step. Algorithm~\ref{alg:mars} summarizes one MARS step.
+
+\begin{algorithm}[t]
+\caption{One MARS control step}
+\label{alg:mars}
+\small
+\begin{algorithmic}[1]
+\State observe $\sigma(t)$, shock flag, demand $d_s$, previous $b_s(t-1)$
+\State $k\gets$ executable task in $\mathcal{G}$; $u_s\gets 0.35\,d_s/\sum d$; $u_{s(k)}\mathrel{+}=\chi_k(t)$
+\State $r\gets$ risk reserve$(\sigma,\text{shock},\rho)$; $u_{\mathrm{SC}}\mathrel{+}=0.45r$; $u_{\mathrm{SV}}\mathrel{+}=0.35r$; $u_{s(k)}\mathrel{+}=0.30r$
+\State $u_s\mathrel{-}=\lambda\,|b_s(t-1)-25|$;\quad $\omega\gets\mathrm{softmax}(u)$
+\State $b_s\gets\mathrm{clip}(\mathrm{round}(B\omega_s),B_s^{\min},B_s^{\max})$
+\If{$t-t_{\mathrm{last}}<T_h$} $b\gets b(t-1)$
+\Else\ $b_s\gets\mathrm{clip}(b_s,\,b_s(t-1)\pm\Delta_{\max})$
+\EndIf
+\State repair $\sum_s b_s=B$ (remove from largest surplus, add by unmet demand)
+\State serve radio and edge workloads; update AoI, reliability, task state
+\end{algorithmic}
+\end{algorithm}
+
+The controller is a deterministic heuristic; it does not solve the underlying mixed-integer stochastic program, and CVaR is evaluated after the fact rather than enforced online.
+
+%=====================================================================
+\section{Experimental Method}
+\textbf{Main experiment.} Each policy is run for 300\,s on seeds 20--49 (120 runs). Because the stochastic environment draws the same random numbers regardless of the policy, a given seed exposes all four policies to an identical severity, shock, channel, and demand trajectory. We verified this property programmatically and exploit it with paired tests (common random numbers). Re-running the experiment reproduces the archived results exactly.
+
+\textbf{Statistics.} We report 95\% percentile bootstrap confidence intervals (4000 resamples) for means and for CVaR$_{0.90}$ \cite{bootstrap}, and paired Wilcoxon signed-rank tests on per-seed differences \cite{wilcoxon}. With 30 seeds, the CVaR$_{0.90}$ estimate averages the worst three runs, so its interval is wide.
+
+\textbf{Edge-case studies.} Table~\ref{tab:edge} lists the sweeps. Each point uses all four policies (or MARS alone for controller parameters) and the same 30 seeds, about 8{,}000 runs in total. Deadline scaling stretches each deadline relative to the incident start, $D_k'=t_0+s(D_k-t_0)$; workload scaling multiplies $L_k$ and $C_k$.
+
+\begin{table}[t]
+\centering
+\caption{Edge-case studies (30 seeds per point).}
+\label{tab:edge}
+\scriptsize
+\begin{tabular}{lll}
+\toprule
+Study & Values & Edge case probed\\
+\midrule
+PRB budget $B$ & 50--200 & feasibility floor; surplus\\
+Initial severity $\sigma_0$ & 0--1.0 & benign vs.\ extreme incident\\
+Shock prob.\ $p_{\mathrm{sh}}$ & 0--0.30 & no shocks vs.\ shock storm\\
+Deadline scale & 0.5--1.5 & infeasible vs.\ relaxed deadlines\\
+Workload scale & 0.25--3.0 & light load vs.\ horizon overrun\\
+Severity $\times$ $B$ grid & $5\times4$ & joint stress\\
+Risk aversion $\rho$ & 0--1 & MARS reserve strength\\
+Hold time $T_h$ & 0--20\,s & hysteresis off vs.\ sluggish\\
+Change limit $\Delta_{\max}$ & 1--64 & frozen vs.\ unconstrained\\
+Ablation (8 variants) & --- & component contribution\\
+Weight logging & --- & softmax saturation\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%=====================================================================
+\section{Results at the Nominal Operating Point}
+\subsection{Aggregate Performance with Uncertainty}
+Table~\ref{tab:main} and \figref{fig:ci} report the main results with 95\% confidence intervals. \figref{fig:policy} shows the four success components. Both mission-oriented policies achieve every deadline and quadruple the success score of STATIC and PROPORTIONAL. MARS has the lowest point estimate of CVaR$_{0.90}$, but its interval [22.0, 26.9] overlaps MISSION-AWARE's [20.9, 29.7].
+
+\begin{table*}[t]
+\centering
+\caption{Main result, 30 seeds per policy, mean [95\% bootstrap CI]. Full-mission probability is the fraction of runs in which all five tasks succeed.}
+\label{tab:main}
+\footnotesize
+\begin{tabular}{lccccc}
+\toprule
+Policy & Mission-success score & Deadline success & Reconfig.\ cost & Mean loss & CVaR$_{0.90}$ loss \\
+\midrule
+STATIC & 0.187 [0.167, 0.200] & 0.200 & 14 & 45.16 [44.98, 45.43] & 45.16 [44.98, 47.73]\\
+PROPORTIONAL & 0.193 [0.180, 0.200] & 0.193 & 3414 [3389, 3438] & 45.13 [44.98, 45.43] & 45.13 [44.98, 49.48]\\
+MISSION-AWARE & 0.727 [0.680, 0.767] & 1.000 & 1829 [1805, 1851] & 18.07 [17.14, 19.19] & 24.54 [20.88, 29.68]\\
+MARS & 0.707 [0.660, 0.747] & 1.000 & 1030 [986, 1075] & 18.64 [17.63, 19.78] & 23.26 [21.98, 26.93]\\
+\midrule
+\multicolumn{6}{l}{Full-mission probability is 0.00 for every policy (see Section~\ref{sec:k5}).}\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_ci_main.pdf}
+\caption{Main metrics with 95\% bootstrap confidence intervals (30 seeds). STATIC's reconfiguration cost of 14 is the one-time move from the equal-share initial allocation.}
+\label{fig:ci}
+\end{figure*}
+
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{ext_success_components.pdf}
+\caption{Mean success components per policy. Freshness is satisfied in every run, so failures come from deadline or reliability checks.}
+\label{fig:policy}
+\end{figure}
+
+\subsection{Paired Comparisons}
+Table~\ref{tab:paired} tests MARS against each baseline seed by seed. Against STATIC and PROPORTIONAL, MARS lowers mission loss in all 30 seeds. Against MISSION-AWARE, MARS lowers reconfiguration cost in all 30 seeds (mean $-799$ PRB-steps). Mission loss and success are tied in 17 seeds, better in 5, and worse in 8, and neither difference is significant. \emph{The defensible claim is therefore equivalent mission outcome at 44\% lower reconfiguration cost, not superior tail risk.}
+
+\begin{table}[t]
+\centering
+\caption{Paired differences MARS $-$ baseline over 30 seeds: mean [95\% CI], win/tie/loss count for MARS, Wilcoxon signed-rank $p$.}
+\label{tab:paired}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccc}
+\toprule
+Baseline & Metric & $\Delta$ mean [CI] & W/T/L & $p$\\
+\midrule
+STATIC & loss & $-26.5$ [$-27.5,-25.4$] & 30/0/0 & $<10^{-5}$\\
+PROPORT. & loss & $-26.5$ [$-27.5,-25.4$] & 30/0/0 & $<10^{-5}$\\
+PROPORT. & reconfig. & $-2384$ [$-2432,-2334$] & 30/0/0 & $<10^{-5}$\\
+MISSION-AW. & loss & $+0.57$ [$-0.55,1.65$] & 5/17/8 & 0.23\\
+MISSION-AW. & success & $-0.020$ [$-0.067,0.027$] & 5/17/8 & 0.47\\
+MISSION-AW. & reconfig. & $-799$ [$-835,-762$] & 30/0/0 & $<10^{-5}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{ext_pareto.pdf}
+\caption{Per-run mission loss versus reconfiguration cost (jitter $\pm0.25$ on loss). MARS and MISSION-AWARE overlap in loss but separate cleanly in cost; STATIC and PROPORTIONAL sit on the high-loss plateau.}
+\label{fig:pareto}
+\end{figure}
+
+\subsection{Loss Distribution and Choice of $\beta$}
+\figref{fig:tail}(a) shows the per-run loss distribution. The mission-oriented policies concentrate near 16.5 (four of five tasks succeed), and the non-adaptive policies concentrate at 45.0 (only $K_1$ succeeds). \figref{fig:tail}(b) plots CVaR$_\beta$ for $\beta\in[0,0.95]$. MARS has a higher mean ($\beta=0$) than MISSION-AWARE and a higher CVaR for $0.55\le\beta\le0.85$ and $\beta=0.95$; it is lower only near $\beta=0.90$. The earlier draft's CVaR$_{0.90}$ advantage is therefore sensitive to the chosen confidence level, and we no longer present it as a finding.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_loss_tail.pdf}
+\caption{(a) Empirical CDF of per-run mission loss; markers show the worst run. (b) CVaR$_\beta$ as a function of $\beta$; the ranking of MARS and MISSION-AWARE changes with $\beta$.}
+\label{fig:tail}
+\end{figure*}
+
+\subsection{Per-Task Anatomy and an Infeasible Task}\label{sec:k5}
+\figref{fig:tasks}(a) breaks success down by task. STATIC and PROPORTIONAL complete $K_1$ and then miss the deadline of $K_2$. Each later task inherits the delay, so 80\% of their task instances fail on deadlines (\figref{fig:tasks}(b)). The mission-oriented policies meet every deadline, and their failures are reliability failures only.
+
+The most important edge case is $K_5$: \emph{no policy completes valve manipulation successfully in any of the 120 runs}. $K_5$ requires $P^{\mathrm{succ}}\ge0.96$. Ignoring load and shock penalties, \eqref{eq:rel} gives $P^{\mathrm{succ}}\approx0.994(1-0.075\sigma)$, which falls below 0.96 once $\sigma\gtrsim0.46$. With $\sigma_0=0.6$ and positive growth, severity during $K_5$ is about 0.8, so $K_5$ is infeasible by construction for every policy. The full-mission success probability is consequently zero, and the success score cannot exceed 0.8 at the nominal point. This is a property of the scenario parameters, not of the controllers. It is confirmed by the severity sweep, where success reaches 0.96 only when $\sigma_0$ is near zero (\figref{fig:sev}).
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_task_breakdown.pdf}
+\caption{(a) Per-task success probability (30 seeds). $K_5$ never succeeds. (b) Outcome of all 150 task instances per policy, attributed to the first failed check (deadline, then reliability, then freshness).}
+\label{fig:tasks}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_gantt_seed20.pdf}
+\caption{Task timeline for seed 20. Mission-oriented policies finish the mission by $t\approx150$\,s; STATIC and PROPORTIONAL overrun the $K_2$ deadline and every later deadline.}
+\label{fig:gantt}
+\end{figure*}
+
+\subsection{Allocation Dynamics}
+\figref{fig:trace} contrasts MISSION-AWARE and MARS on seed 20. Both move the active slice to its upper bound (60 PRBs for SC/SV, 40 for SM). MISSION-AWARE jitters the non-active slices every step, whereas the MARS hold time produces piecewise-constant allocations. After the mission ends ($t>152$\,s), MARS keeps about 50 PRBs on SC because the risk reserve grows with severity. This persistent reserve explains MARS's lower control-latency proxy (\figref{fig:latency}), since the proxy penalizes SC allocations below 35 PRBs. Averaged over 30 seeds, the proxy is the same for both policies while the mission runs (20.9\,ms), but it is 16.8 vs.\ 22.4\,ms after the mission ends. The latency advantage therefore comes from the post-mission period and does not reflect better mission service.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_trace_seed20.pdf}
+\caption{Seed 20: severity with network shocks (shaded) and PRB allocation under MISSION-AWARE and MARS. Labels mark the active task.}
+\label{fig:trace}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_latency.pdf}
+\caption{(a) Per-step control-latency proxy across all runs. (b) Spread of the run-level P95. MARS's low tail arises mainly from its post-mission SC reserve. Values are model proxies, not measured NR latency.}
+\label{fig:latency}
+\end{figure*}
+
+%=====================================================================
+\section{Edge-Case Evaluation}\label{sec:edge}
+\subsection{Radio Budget: Feasibility Floor and Surplus Paradox}
+\figref{fig:prb} sweeps $B$ from 50 to 200. At $B=50=\sum_sB_s^{\min}$ every slice is pinned at its minimum, no policy can adapt, and all success scores are zero. That is the degenerate lower edge. Budgets below 50 violate \eqref{eq:prb} and are rejected by the configuration validator. Success climbs steeply between 55 and 80 PRBs for the adaptive policies, while STATIC and PROPORTIONAL need about 80 PRBs before even $K_1$ succeeds.
+
+Counter-intuitively, success \emph{falls} for $B>120$ and returns to the STATIC level at $B\ge150$. The cause is the radio--edge coupling of \eqref{eq:edge}. The active SM slice is capped at $B^{\max}_{\mathrm{SM}}=40$ PRBs, so a larger $B$ shrinks its fraction $40/B$ of the edge capacity. For example, $K_2$ receives 27\% of the edge at $B=150$ instead of 40\% at $B=100$, becomes compute-bound, and misses its deadline. MARS degrades earlier than MISSION-AWARE (0.60 vs.\ 0.70 at $B=120$): under MARS, $K_2$ misses its deadline in 13\% of runs and $K_3$ fails its reliability check in 47\%, against 0\% and 27\% for MISSION-AWARE. A deployment-grade model should decouple edge scheduling from radio share or scale $B^{\max}_s$ with $B$.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_sweep_prbs.pdf}
+\caption{PRB-budget sweep with 95\% CIs. The vertical line marks the feasibility floor $B=\sum_s B^{\min}_s=50$. Success drops above $B=120$ because edge share is tied to radio share while the active slice is capped.}
+\label{fig:prb}
+\end{figure*}
+
+\subsection{Incident Severity and Network Shocks}
+\figref{fig:sev} varies $\sigma_0$. Under a benign incident ($\sigma_0\le0.2$), MARS reaches 0.96 [0.93, 0.99] versus 0.91 [0.85, 0.96] for MISSION-AWARE at $\sigma_0=0$, and 0.95 vs.\ 0.86 at $\sigma_0=0.2$, with markedly lower CVaR (17.2 vs.\ 21.2). This is the regime in which $K_5$ is feasible and the protected SC slice pays off. For $\sigma_0\ge0.8$ all policies collapse: the adaptive ones to about 0.35, and STATIC and PROPORTIONAL to zero at $\sigma_0\ge0.9$, where even $K_1$ no longer succeeds.
+
+\figref{fig:shock} sweeps the per-step shock probability. With no shocks the two mission-oriented policies coincide (0.78). Success decays smoothly as shocks become more frequent, reaching 0.13--0.16 in a shock storm ($p_{\mathrm{sh}}=0.3$). MARS's reserve does not give a measurable advantage under frequent shocks.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_sweep_severity.pdf}
+\caption{Initial-severity sweep with 95\% CIs. MARS leads at low severity, where the final task becomes feasible; all policies degrade above $\sigma_0=0.6$.}
+\label{fig:sev}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_sweep_shock.pdf}
+\caption{Network-shock probability sweep with 95\% CIs (vertical line = nominal $p_{\mathrm{sh}}=0.018$).}
+\label{fig:shock}
+\end{figure*}
+
+\subsection{Deadline Tightness and Workload}
+Tightening deadlines (\figref{fig:deadline}) exposes the cost of hysteresis. At scale 0.8, MISSION-AWARE achieves 0.58 [0.52, 0.63] and MARS 0.49 [0.43, 0.53]; at 0.7 the figures are 0.36 and 0.28. Below 0.6 only $K_1$ can succeed for either policy. When slack is small, the 4\,s hold delays the move of PRBs to a newly activated task, and that delay is no longer recoverable. Relaxed deadlines (scale 1.5) help STATIC and PROPORTIONAL most, since deadlines were their binding constraint.
+
+Workload scaling (\figref{fig:workload}) shows the same pattern. At $1.25\times$ load MARS falls to 0.42 vs.\ 0.58 for MISSION-AWARE. At $3\times$ load the mission no longer fits in the 300\,s horizon: only three tasks are observed and the rest count as failures. At light load ($\le0.5\times$) the non-adaptive policies recover to 0.4--0.6, so mission awareness matters most when resources are tight relative to workload.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_sweep_deadline.pdf}
+\caption{Deadline-scale sweep. Below 0.6 every policy is limited to $K_1$; between 0.7 and 0.9 MARS trails MISSION-AWARE because of its hold time.}
+\label{fig:deadline}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_sweep_workload.pdf}
+\caption{Workload-scale sweep. Above $1.5\times$ the mission cannot finish within the horizon for any policy.}
+\label{fig:workload}
+\end{figure*}
+
+\subsection{Joint Stress Map}
+\figref{fig:grid} crosses severity and budget for all four policies. The mission-oriented policies match or beat the non-adaptive ones in every cell except $B=120$, $\sigma_0=0.8$, where all four policies are near 0.2, and the $B=60$, $\sigma_0=1.0$ corner, where all fail. MARS and MISSION-AWARE differ by at most 0.10 in any cell. The largest gaps are at $B=100$, $\sigma_0=0.2$ (MARS ahead, 0.95 vs.\ 0.86) and at $B=120$, $\sigma_0=0.6$ (MARS behind because of the budget paradox, 0.60 vs.\ 0.70).
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_stress_grid.pdf}
+\caption{Mission-success score over initial severity $\times$ total PRBs (30 seeds per cell).}
+\label{fig:grid}
+\end{figure*}
+
+\subsection{MARS Parameters and Ablation}
+\figref{fig:params} sweeps the three MARS parameters. Risk aversion $\rho$ barely moves success (0.68--0.72) and changes reconfiguration cost non-monotonically. The hold time $T_h$ is the main stability lever: going from 0 to 20\,s cuts reconfiguration by $9\times$ (2908 to 327) at a cost of 0.08 in success. $T_h=0$ and $T_h=1$ behave identically because the hold condition $t-t_{\mathrm{last}}\ge T_h$ is always true for $T_h\le1$. A very small change limit ($\Delta_{\max}=1$) freezes adaptation (success 0.53), and $\Delta_{\max}=32$ gives the best success (0.73).
+
+The 30-seed ablation (\figref{fig:ablation}) revises the earlier 6-seed result in three ways.
+(i) Removing AoI, urgency, or \emph{all} criticality terms yields results identical to MARS-full.
+(ii) Removing hysteresis \emph{raises} success to 0.727 (it then equals MISSION-AWARE) at a $2.8\times$ higher reconfiguration cost. The earlier 6-seed ablation suggested the opposite.
+(iii) Removing the risk reserve or the reconfiguration penalty \emph{lowers} reconfiguration cost (to 762 and 746) without hurting success. The penalty measures deviation from the equal share of 25 PRBs, not from the previous allocation, so it pushes allocations toward 25 and away from the bounds where they otherwise settle.
+
+The inert criticality terms are explained by saturation (\figref{fig:ablation}(c)). Because only one task is executable at a time, $\chi_k\approx8$--$23$ dominates the demand terms ($<0.35$). While the mission runs on seed 20 ($t=20$--$151$\,s), the largest softmax weight is at least 0.9997 at every step. The resulting target exceeds the slice's upper bound and is clipped, so the allocation depends only on \emph{which} slice is active, not on \emph{how} critical it is. Making the criticality weights matter requires concurrent tasks or a softmax temperature that keeps scores in the unsaturated range.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_mars_params.pdf}
+\caption{MARS parameter sensitivity (30 seeds; vertical line = nominal). Top: success with 95\% CI. Bottom: reconfiguration cost.}
+\label{fig:params}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{ext_ablation.pdf}
+\caption{(a,b) Extended ablation over 30 seeds with 95\% CIs (vertical line = MARS-full). AoI, urgency, and all criticality terms have no effect; removing hysteresis increases success but nearly triples reconfiguration. (c) Largest MARS slice weight per step on seed 20: it is saturated at 1 for the whole mission, so slice bounds, not criticality values, set the allocation.}
+\label{fig:ablation}
+\end{figure*}
+
+%=====================================================================
+\section{Discussion}
+\textbf{What the evidence supports.} (1) Mission-aware allocation is far better than fixed or demand-proportional slicing in this model. The effect holds in every paired seed and across the whole stress map except degenerate corners. (2) MARS delivers the same nominal mission outcome as MISSION-AWARE with 44\% less reconfiguration, which is relevant where each reallocation carries signalling or instability cost. (3) MARS is clearly better under mild incidents.
+
+\textbf{What it does not support.} MARS does not have a statistically supported tail-risk advantage at the nominal point, and its CVaR ranking depends on $\beta$. Under tight deadlines, heavy workload, or surplus PRBs it is worse than MISSION-AWARE, because the hold time and reserve trade agility for stability. The criticality formulation \eqref{eq:criticality}, presented as a core contribution, does not influence decisions in the current single-task-at-a-time configuration.
+
+\textbf{Design implications.} An adaptive hold time that shrinks when deadline slack is small would combine the stability of MARS at nominal load with the agility of MISSION-AWARE under pressure. A reconfiguration penalty relative to $b_s(t-1)$, a reserve that switches off when the mission ends, and an edge scheduler independent of radio share would remove the three model artifacts identified above.
+
+%=====================================================================
+\section{Threats to Validity and Limitations}
+\emph{Internal validity.} Results depend on hand-chosen parameters, and several conclusions (e.g., $K_5$ infeasibility and the budget paradox) follow directly from specific modelling choices that we expose rather than tune away. Thirty seeds give wide CVaR$_{0.90}$ intervals because only three runs fall in the tail.
+\emph{Construct validity.} The success score is a per-task fraction, not mission completion. The latency values are proxies that are not part of task success. Mission loss uses value weights $w_k(1+0.25h_k)$ rather than $\chi_k$.
+\emph{External validity.} The radio model is analytical, with one cell, one edge server, no mobility or handover, and independent component reliabilities. No packet-level, testbed, or field validation has been performed, and no E2/A1 interface is exercised. The controller is a heuristic; it is not compared against an optimization-based or learning-based controller.
+
+Future work should validate the abstractions with ns-3/5G-LENA \cite{lena}, recalibrate the reliability model so that every task is feasible at nominal severity, introduce concurrent tasks so that criticality weights become decision-relevant, implement the adaptive hold time proposed above, and benchmark against a CVaR-constrained MILP and a reinforcement-learning controller.
+
+%=====================================================================
+\section{Conclusion}
+MARS-O-RAN links a five-task emergency mission to four network slices and evaluates task success, deadlines, freshness, reliability, reconfiguration, and tail loss in a reproducible digital twin. A paired statistical analysis and eleven edge-case studies give a more precise picture than aggregate means. Mission-aware slicing is robustly beneficial. The MARS stability mechanisms cut reconfiguration by 44\% at equal nominal outcome and help under mild incidents, but they cost agility when slack is tight. The edge cases also uncovered an infeasible final task, a radio--edge budget paradox, and saturated criticality weights. These findings define the next steps toward a controller whose advantages hold across the operating envelope rather than at a single nominal point.
+
+\section*{Reproducibility}
+All results are generated by \texttt{src/run\_all.py} (main experiment) and \texttt{src/edge\_case\_experiments.py} (statistics, sweeps, and figures) with fixed seeds. Outputs are written to \texttt{results/} and \texttt{results/extended/}.
+
+\begin{thebibliography}{00}
+\bibitem{oranarch} O-RAN Software Community, ``O-RAN Architecture Overview,'' F-Release documentation. [Online]. Available: \url{https://docs.o-ran-sc.org/en/f-release/architecture/architecture.html}. Accessed: Oct. 15, 2026.
+\bibitem{oranwg3} O-RAN ALLIANCE, ``Near-Real-time RAN Intelligent Controller and E2 Interface Workgroup (WG3).'' [Online]. Available: \url{https://www.o-ran.org/technical-groups/wg3}. Accessed: Oct. 15, 2026.
+\bibitem{polese} M. Polese, L. Bonati, S. D'Oro, S. Basagni, and T. Melodia, ``Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges,'' \emph{IEEE Communications Surveys \& Tutorials}, vol. 25, no. 2, pp. 1376--1411, 2023, doi: 10.1109/COMST.2023.3239220.
+\bibitem{kaul} S. Kaul, R. Yates, and M. Gruteser, ``Real-time status: How often should one update?'' in \emph{Proc. IEEE INFOCOM}, 2012, pp. 2731--2735.
+\bibitem{aoi} R. D. Yates, Y. Sun, D. R. Brown III, S. K. Kaul, E. Modiano, and S. Ulukus, ``Age of Information: An Introduction and Survey,'' \emph{IEEE Journal on Selected Areas in Communications}, vol. 39, no. 5, pp. 1183--1210, May 2021, doi: 10.1109/JSAC.2021.3065072.
+\bibitem{polyanskiy} Y. Polyanskiy, H. V. Poor, and S. Verd\'u, ``Channel Coding Rate in the Finite Blocklength Regime,'' \emph{IEEE Transactions on Information Theory}, vol. 56, no. 5, pp. 2307--2359, May 2010, doi: 10.1109/TIT.2010.2043769.
+\bibitem{cvar} R. T. Rockafellar and S. Uryasev, ``Optimization of Conditional Value-at-Risk,'' \emph{The Journal of Risk}, vol. 2, no. 3, pp. 21--41, 2000, doi: 10.21314/JOR.2000.038.
+\bibitem{bvlos} P. Baguer, E. Municio, G. Garcia-Aviles, and X. Costa-Perez, ``Enabling Beyond-Visual-Line-of-Sight Drones Operation Over Open RAN 5G Networks With Slicing,'' \emph{IEEE Network}, vol. 38, no. 6, pp. 163--169, Nov. 2024, doi: 10.1109/MNET.2024.3420085.
+\bibitem{safeslice} A. M. Nagib, H. Abou-Zeid, and H. S. Hassanein, ``SafeSlice: Enabling SLA-Compliant O-RAN Slicing via Safe Deep Reinforcement Learning,'' in \emph{Proc. IEEE Int. Conf. Machine Learning for Communication and Networking (ICMLCN)}, 2025, arXiv:2503.12753.
+\bibitem{lena} N. Patriciello, S. Lag\'en, B. Bojovi\'c, and L. Giupponi, ``An E2E simulator for 5G NR networks,'' \emph{Simulation Modelling Practice and Theory}, vol. 96, art. 101933, 2019, doi: 10.1016/j.simpat.2019.101933.
+\bibitem{bootstrap} B. Efron and R. J. Tibshirani, \emph{An Introduction to the Bootstrap}. New York, NY, USA: Chapman \& Hall, 1993.
+\bibitem{wilcoxon} F. Wilcoxon, ``Individual comparisons by ranking methods,'' \emph{Biometrics Bulletin}, vol. 1, no. 6, pp. 80--83, 1945, doi: 10.2307/3001968.
+\end{thebibliography}
+\end{document}

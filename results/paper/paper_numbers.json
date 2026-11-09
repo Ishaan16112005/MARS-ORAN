@@ -1,0 +1,6283 @@
+{
+ "common_random_numbers_verified": true,
+ "main.A_benign.STATIC.mission_success_rate": [
+  0.3607,
+  0.3507,
+  0.37
+ ],
+ "main.A_benign.STATIC.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.A_benign.STATIC.total_reconfig_cost": [
+  14.0,
+  14.0,
+  14.0
+ ],
+ "main.A_benign.STATIC.reconfig_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.A_benign.STATIC.reconfig_idle": [
+  14.0,
+  14.0,
+  14.0
+ ],
+ "main.A_benign.STATIC.mission_loss": [
+  32.5853,
+  32.369,
+  32.8182
+ ],
+ "main.A_benign.STATIC.CVaR90": [
+  37.4583,
+  36.8167,
+  37.7333
+ ],
+ "main.A_benign.PROPORTIONAL.mission_success_rate": [
+  0.7127,
+  0.6987,
+  0.726
+ ],
+ "main.A_benign.PROPORTIONAL.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.A_benign.PROPORTIONAL.total_reconfig_cost": [
+  3822.7933,
+  3811.7932,
+  3833.8937
+ ],
+ "main.A_benign.PROPORTIONAL.reconfig_mission": [
+  2233.4067,
+  2224.3665,
+  2243.16
+ ],
+ "main.A_benign.PROPORTIONAL.reconfig_idle": [
+  1589.3867,
+  1581.3595,
+  1597.894
+ ],
+ "main.A_benign.PROPORTIONAL.mission_loss": [
+  18.7413,
+  18.3693,
+  19.1195
+ ],
+ "main.A_benign.PROPORTIONAL.CVaR90": [
+  26.0183,
+  24.7833,
+  27.27
+ ],
+ "main.A_benign.MISSION_AWARE.mission_success_rate": [
+  0.906,
+  0.8913,
+  0.9207
+ ],
+ "main.A_benign.MISSION_AWARE.full_mission": [
+  0.6033,
+  0.5467,
+  0.66
+ ],
+ "main.A_benign.MISSION_AWARE.total_reconfig_cost": [
+  1760.5933,
+  1753.16,
+  1768.2467
+ ],
+ "main.A_benign.MISSION_AWARE.reconfig_mission": [
+  1353.8133,
+  1346.9195,
+  1361.1405
+ ],
+ "main.A_benign.MISSION_AWARE.reconfig_idle": [
+  406.78,
+  404.3933,
+  409.0667
+ ],
+ "main.A_benign.MISSION_AWARE.mission_loss": [
+  12.2657,
+  11.888,
+  12.6544
+ ],
+ "main.A_benign.MISSION_AWARE.CVaR90": [
+  19.0233,
+  17.8317,
+  20.3988
+ ],
+ "main.A_benign.MYOPIC_OPT.mission_success_rate": [
+  0.906,
+  0.8913,
+  0.92
+ ],
+ "main.A_benign.MYOPIC_OPT.full_mission": [
+  0.6033,
+  0.5467,
+  0.66
+ ],
+ "main.A_benign.MYOPIC_OPT.total_reconfig_cost": [
+  310.0,
+  310.0,
+  310.0
+ ],
+ "main.A_benign.MYOPIC_OPT.reconfig_mission": [
+  310.0,
+  310.0,
+  310.0
+ ],
+ "main.A_benign.MYOPIC_OPT.reconfig_idle": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.A_benign.MYOPIC_OPT.mission_loss": [
+  12.2675,
+  11.8953,
+  12.6452
+ ],
+ "main.A_benign.MYOPIC_OPT.CVaR90": [
+  18.9133,
+  17.795,
+  20.1783
+ ],
+ "main.A_benign.MARS_V0.mission_success_rate": [
+  0.924,
+  0.9093,
+  0.9387
+ ],
+ "main.A_benign.MARS_V0.full_mission": [
+  0.6867,
+  0.6333,
+  0.74
+ ],
+ "main.A_benign.MARS_V0.total_reconfig_cost": [
+  1073.4933,
+  1062.986,
+  1084.2407
+ ],
+ "main.A_benign.MARS_V0.reconfig_mission": [
+  575.0133,
+  571.6333,
+  578.367
+ ],
+ "main.A_benign.MARS_V0.reconfig_idle": [
+  498.48,
+  488.3328,
+  508.887
+ ],
+ "main.A_benign.MARS_V0.mission_loss": [
+  11.7817,
+  11.4131,
+  12.1465
+ ],
+ "main.A_benign.MARS_V0.CVaR90": [
+  18.7483,
+  17.4467,
+  20.105
+ ],
+ "main.A_benign.MARS.mission_success_rate": [
+  0.9087,
+  0.894,
+  0.9227
+ ],
+ "main.A_benign.MARS.full_mission": [
+  0.6267,
+  0.5733,
+  0.68
+ ],
+ "main.A_benign.MARS.total_reconfig_cost": [
+  298.22,
+  297.5733,
+  298.8667
+ ],
+ "main.A_benign.MARS.reconfig_mission": [
+  216.4933,
+  215.92,
+  217.0467
+ ],
+ "main.A_benign.MARS.reconfig_idle": [
+  81.7267,
+  81.3867,
+  82.0667
+ ],
+ "main.A_benign.MARS.mission_loss": [
+  12.0805,
+  11.7357,
+  12.4362
+ ],
+ "main.A_benign.MARS.CVaR90": [
+  18.9683,
+  17.7767,
+  20.0133
+ ],
+ "main.B_severe.STATIC.mission_success_rate": [
+  0.1813,
+  0.1747,
+  0.188
+ ],
+ "main.B_severe.STATIC.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.STATIC.total_reconfig_cost": [
+  14.0,
+  14.0,
+  14.0
+ ],
+ "main.B_severe.STATIC.reconfig_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.STATIC.reconfig_idle": [
+  14.0,
+  14.0,
+  14.0
+ ],
+ "main.B_severe.STATIC.mission_loss": [
+  45.2317,
+  45.14,
+  45.3233
+ ],
+ "main.B_severe.STATIC.CVaR90": [
+  47.5417,
+  46.625,
+  47.725
+ ],
+ "main.B_severe.PROPORTIONAL.mission_success_rate": [
+  0.1813,
+  0.1747,
+  0.1873
+ ],
+ "main.B_severe.PROPORTIONAL.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.PROPORTIONAL.total_reconfig_cost": [
+  3420.4,
+  3411.6732,
+  3429.58
+ ],
+ "main.B_severe.PROPORTIONAL.reconfig_mission": [
+  2245.9,
+  2236.813,
+  2255.247
+ ],
+ "main.B_severe.PROPORTIONAL.reconfig_idle": [
+  1174.5,
+  1167.413,
+  1181.6473
+ ],
+ "main.B_severe.PROPORTIONAL.mission_loss": [
+  45.2083,
+  45.1158,
+  45.3067
+ ],
+ "main.B_severe.PROPORTIONAL.CVaR90": [
+  47.5417,
+  46.7167,
+  47.725
+ ],
+ "main.B_severe.MISSION_AWARE.mission_success_rate": [
+  0.696,
+  0.6813,
+  0.7107
+ ],
+ "main.B_severe.MISSION_AWARE.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.MISSION_AWARE.total_reconfig_cost": [
+  1844.0667,
+  1836.7133,
+  1851.7538
+ ],
+ "main.B_severe.MISSION_AWARE.reconfig_mission": [
+  1496.46,
+  1489.2332,
+  1503.981
+ ],
+ "main.B_severe.MISSION_AWARE.reconfig_idle": [
+  347.6067,
+  345.5,
+  349.8135
+ ],
+ "main.B_severe.MISSION_AWARE.mission_loss": [
+  18.9353,
+  18.5815,
+  19.2892
+ ],
+ "main.B_severe.MISSION_AWARE.CVaR90": [
+  25.8067,
+  24.3583,
+  26.9983
+ ],
+ "main.B_severe.MYOPIC_OPT.mission_success_rate": [
+  0.6953,
+  0.6807,
+  0.71
+ ],
+ "main.B_severe.MYOPIC_OPT.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.MYOPIC_OPT.total_reconfig_cost": [
+  310.0,
+  310.0,
+  310.0
+ ],
+ "main.B_severe.MYOPIC_OPT.reconfig_mission": [
+  310.0,
+  310.0,
+  310.0
+ ],
+ "main.B_severe.MYOPIC_OPT.reconfig_idle": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.MYOPIC_OPT.mission_loss": [
+  18.9518,
+  18.5943,
+  19.2983
+ ],
+ "main.B_severe.MYOPIC_OPT.CVaR90": [
+  25.495,
+  24.12,
+  26.8517
+ ],
+ "main.B_severe.MARS_V0.mission_success_rate": [
+  0.692,
+  0.6767,
+  0.7067
+ ],
+ "main.B_severe.MARS_V0.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.MARS_V0.total_reconfig_cost": [
+  940.6533,
+  929.1865,
+  952.7073
+ ],
+ "main.B_severe.MARS_V0.reconfig_mission": [
+  615.0867,
+  611.5132,
+  618.7002
+ ],
+ "main.B_severe.MARS_V0.reconfig_idle": [
+  325.5667,
+  314.4587,
+  336.9138
+ ],
+ "main.B_severe.MARS_V0.mission_loss": [
+  19.0857,
+  18.7281,
+  19.4505
+ ],
+ "main.B_severe.MARS_V0.CVaR90": [
+  25.88,
+  24.4683,
+  26.8338
+ ],
+ "main.B_severe.MARS.mission_success_rate": [
+  0.6673,
+  0.6507,
+  0.6833
+ ],
+ "main.B_severe.MARS.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.B_severe.MARS.total_reconfig_cost": [
+  324.9667,
+  324.1132,
+  325.8467
+ ],
+ "main.B_severe.MARS.reconfig_mission": [
+  242.1133,
+  241.3267,
+  242.9133
+ ],
+ "main.B_severe.MARS.reconfig_idle": [
+  82.8533,
+  82.54,
+  83.1867
+ ],
+ "main.B_severe.MARS.mission_loss": [
+  19.577,
+  19.2012,
+  19.9638
+ ],
+ "main.B_severe.MARS.CVaR90": [
+  26.2467,
+  25.3479,
+  26.8883
+ ],
+ "main.C_concurrent.STATIC.mission_success_rate": [
+  0.5847,
+  0.5693,
+  0.6
+ ],
+ "main.C_concurrent.STATIC.full_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.C_concurrent.STATIC.total_reconfig_cost": [
+  14.0,
+  14.0,
+  14.0
+ ],
+ "main.C_concurrent.STATIC.reconfig_mission": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.C_concurrent.STATIC.reconfig_idle": [
+  14.0,
+  14.0,
+  14.0
+ ],
+ "main.C_concurrent.STATIC.mission_loss": [
+  23.5907,
+  23.1873,
+  23.9922
+ ],
+ "main.C_concurrent.STATIC.CVaR90": [
+  29.945,
+  29.175,
+  30.8433
+ ],
+ "main.C_concurrent.PROPORTIONAL.mission_success_rate": [
+  0.6873,
+  0.67,
+  0.7033
+ ],
+ "main.C_concurrent.PROPORTIONAL.full_mission": [
+  0.0033,
+  0.0,
+  0.01
+ ],
+ "main.C_concurrent.PROPORTIONAL.total_reconfig_cost": [
+  3822.7933,
+  3811.7932,
+  3833.8937
+ ],
+ "main.C_concurrent.PROPORTIONAL.reconfig_mission": [
+  1832.58,
+  1824.4597,
+  1841.0605
+ ],
+ "main.C_concurrent.PROPORTIONAL.reconfig_idle": [
+  1990.2133,
+  1981.5325,
+  1999.1552
+ ],
+ "main.C_concurrent.PROPORTIONAL.mission_loss": [
+  19.6898,
+  19.2251,
+  20.1784
+ ],
+ "main.C_concurrent.PROPORTIONAL.CVaR90": [
+  28.9283,
+  26.9833,
+  30.3855
+ ],
+ "main.C_concurrent.MISSION_AWARE.mission_success_rate": [
+  0.91,
+  0.8953,
+  0.924
+ ],
+ "main.C_concurrent.MISSION_AWARE.full_mission": [
+  0.6267,
+  0.5733,
+  0.68
+ ],
+ "main.C_concurrent.MISSION_AWARE.total_reconfig_cost": [
+  1664.2933,
+  1656.6665,
+  1671.6667
+ ],
+ "main.C_concurrent.MISSION_AWARE.reconfig_mission": [
+  1246.06,
+  1238.9595,
+  1253.0805
+ ],
+ "main.C_concurrent.MISSION_AWARE.reconfig_idle": [
+  418.2333,
+  415.7862,
+  420.5667
+ ],
+ "main.C_concurrent.MISSION_AWARE.mission_loss": [
+  12.1318,
+  11.7761,
+  12.4985
+ ],
+ "main.C_concurrent.MISSION_AWARE.CVaR90": [
+  19.005,
+  17.9233,
+  20.1783
+ ],
+ "main.C_concurrent.MYOPIC_OPT.mission_success_rate": [
+  0.912,
+  0.898,
+  0.9253
+ ],
+ "main.C_concurrent.MYOPIC_OPT.full_mission": [
+  0.62,
+  0.5633,
+  0.6733
+ ],
+ "main.C_concurrent.MYOPIC_OPT.total_reconfig_cost": [
+  252.36,
+  249.413,
+  255.4403
+ ],
+ "main.C_concurrent.MYOPIC_OPT.reconfig_mission": [
+  252.36,
+  249.413,
+  255.4403
+ ],
+ "main.C_concurrent.MYOPIC_OPT.reconfig_idle": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "main.C_concurrent.MYOPIC_OPT.mission_loss": [
+  12.0713,
+  11.7358,
+  12.4288
+ ],
+ "main.C_concurrent.MYOPIC_OPT.CVaR90": [
+  18.5283,
+  17.5567,
+  19.61
+ ],
+ "main.C_concurrent.MARS_V0.mission_success_rate": [
+  0.9147,
+  0.9007,
+  0.9287
+ ],
+ "main.C_concurrent.MARS_V0.full_mission": [
+  0.64,
+  0.5867,
+  0.6933
+ ],
+ "main.C_concurrent.MARS_V0.total_reconfig_cost": [
+  1035.3333,
+  1024.2388,
+  1046.3202
+ ],
+ "main.C_concurrent.MARS_V0.reconfig_mission": [
+  515.4733,
+  512.1467,
+  518.8133
+ ],
+ "main.C_concurrent.MARS_V0.reconfig_idle": [
+  519.86,
+  509.1792,
+  530.3083
+ ],
+ "main.C_concurrent.MARS_V0.mission_loss": [
+  12.031,
+  11.6661,
+  12.4032
+ ],
+ "main.C_concurrent.MARS_V0.CVaR90": [
+  19.0417,
+  17.8867,
+  20.27
+ ],
+ "main.C_concurrent.MARS.mission_success_rate": [
+  0.916,
+  0.9027,
+  0.93
+ ],
+ "main.C_concurrent.MARS.full_mission": [
+  0.65,
+  0.5967,
+  0.7033
+ ],
+ "main.C_concurrent.MARS.total_reconfig_cost": [
+  241.0467,
+  240.4332,
+  241.66
+ ],
+ "main.C_concurrent.MARS.reconfig_mission": [
+  157.68,
+  157.1798,
+  158.22
+ ],
+ "main.C_concurrent.MARS.reconfig_idle": [
+  83.3667,
+  83.0067,
+  83.72
+ ],
+ "main.C_concurrent.MARS.mission_loss": [
+  11.9962,
+  11.6276,
+  12.35
+ ],
+ "main.C_concurrent.MARS.CVaR90": [
+  18.6933,
+  17.685,
+  19.8667
+ ],
+ "paired.A_benign.STATIC.mission_loss": {
+  "mean": -20.5048,
+  "ci": [
+   -20.921,
+   -20.0722
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.27e-53
+ },
+ "paired.A_benign.STATIC.mission_success_rate": {
+  "mean": 0.548,
+  "ci": [
+   0.532,
+   0.564
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.62e-53
+ },
+ "paired.A_benign.STATIC.reconfig_mission": {
+  "mean": 216.4933,
+  "ci": [
+   215.92,
+   217.0467
+  ],
+  "WTL": [
+   0,
+   0,
+   300
+  ],
+  "n_eff": 300,
+  "p": 3.92e-51
+ },
+ "paired.A_benign.STATIC.total_reconfig_cost": {
+  "mean": 284.22,
+  "ci": [
+   283.5733,
+   284.8667
+  ],
+  "WTL": [
+   0,
+   0,
+   300
+  ],
+  "n_eff": 300,
+  "p": 4.5e-51
+ },
+ "paired.A_benign.PROPORTIONAL.mission_loss": {
+  "mean": -6.6608,
+  "ci": [
+   -7.1627,
+   -6.1696
+  ],
+  "WTL": [
+   280,
+   7,
+   13
+  ],
+  "n_eff": 293,
+  "p": 3.38e-48
+ },
+ "paired.A_benign.PROPORTIONAL.mission_success_rate": {
+  "mean": 0.196,
+  "ci": [
+   0.1773,
+   0.2153
+  ],
+  "WTL": [
+   228,
+   59,
+   13
+  ],
+  "n_eff": 241,
+  "p": 9.85e-33
+ },
+ "paired.A_benign.PROPORTIONAL.reconfig_mission": {
+  "mean": -2016.9133,
+  "ci": [
+   -2026.6,
+   -2007.8127
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.06e-51
+ },
+ "paired.A_benign.PROPORTIONAL.total_reconfig_cost": {
+  "mean": -3524.5733,
+  "ci": [
+   -3535.6467,
+   -3513.431
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.07e-51
+ },
+ "paired.A_benign.MISSION_AWARE.mission_loss": {
+  "mean": -0.1852,
+  "ci": [
+   -0.682,
+   0.3153
+  ],
+  "WTL": [
+   88,
+   130,
+   82
+  ],
+  "n_eff": 170,
+  "p": 0.355
+ },
+ "paired.A_benign.MISSION_AWARE.mission_success_rate": {
+  "mean": 0.0027,
+  "ci": [
+   -0.0167,
+   0.0213
+  ],
+  "WTL": [
+   75,
+   155,
+   70
+  ],
+  "n_eff": 145,
+  "p": 0.939
+ },
+ "paired.A_benign.MISSION_AWARE.reconfig_mission": {
+  "mean": -1137.32,
+  "ci": [
+   -1144.6,
+   -1130.3733
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.05e-51
+ },
+ "paired.A_benign.MISSION_AWARE.total_reconfig_cost": {
+  "mean": -1462.3733,
+  "ci": [
+   -1469.9868,
+   -1454.94
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.06e-51
+ },
+ "paired.A_benign.MYOPIC_OPT.mission_loss": {
+  "mean": -0.187,
+  "ci": [
+   -0.6802,
+   0.297
+  ],
+  "WTL": [
+   89,
+   129,
+   82
+  ],
+  "n_eff": 171,
+  "p": 0.323
+ },
+ "paired.A_benign.MYOPIC_OPT.mission_success_rate": {
+  "mean": 0.0027,
+  "ci": [
+   -0.016,
+   0.0213
+  ],
+  "WTL": [
+   76,
+   154,
+   70
+  ],
+  "n_eff": 146,
+  "p": 0.989
+ },
+ "paired.A_benign.MYOPIC_OPT.reconfig_mission": {
+  "mean": -93.5067,
+  "ci": [
+   -94.08,
+   -92.9533
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 3.92e-51
+ },
+ "paired.A_benign.MYOPIC_OPT.total_reconfig_cost": {
+  "mean": -11.78,
+  "ci": [
+   -12.4267,
+   -11.1333
+  ],
+  "WTL": [
+   295,
+   3,
+   2
+  ],
+  "n_eff": 297,
+  "p": 1.59e-50
+ },
+ "paired.A_benign.MARS_V0.mission_loss": {
+  "mean": 0.2988,
+  "ci": [
+   -0.1467,
+   0.7279
+  ],
+  "WTL": [
+   60,
+   165,
+   75
+  ],
+  "n_eff": 135,
+  "p": 0.213
+ },
+ "paired.A_benign.MARS_V0.mission_success_rate": {
+  "mean": -0.0153,
+  "ci": [
+   -0.032,
+   0.0013
+  ],
+  "WTL": [
+   50,
+   184,
+   66
+  ],
+  "n_eff": 116,
+  "p": 0.081
+ },
+ "paired.A_benign.MARS_V0.reconfig_mission": {
+  "mean": -358.52,
+  "ci": [
+   -361.927,
+   -355.1
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 5.98e-51
+ },
+ "paired.A_benign.MARS_V0.total_reconfig_cost": {
+  "mean": -775.2733,
+  "ci": [
+   -785.9673,
+   -764.7658
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.07e-51
+ },
+ "paired.B_severe.STATIC.mission_loss": {
+  "mean": -25.6547,
+  "ci": [
+   -26.0287,
+   -25.2696
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 1.47e-52
+ },
+ "paired.B_severe.STATIC.mission_success_rate": {
+  "mean": 0.486,
+  "ci": [
+   0.47,
+   0.502
+  ],
+  "WTL": [
+   299,
+   1,
+   0
+  ],
+  "n_eff": 299,
+  "p": 1.58e-52
+ },
+ "paired.B_severe.STATIC.reconfig_mission": {
+  "mean": 242.1133,
+  "ci": [
+   241.3267,
+   242.9133
+  ],
+  "WTL": [
+   0,
+   0,
+   300
+  ],
+  "n_eff": 300,
+  "p": 4.65e-51
+ },
+ "paired.B_severe.STATIC.total_reconfig_cost": {
+  "mean": 310.9667,
+  "ci": [
+   310.1132,
+   311.8467
+  ],
+  "WTL": [
+   0,
+   0,
+   300
+  ],
+  "n_eff": 300,
+  "p": 4.98e-51
+ },
+ "paired.B_severe.PROPORTIONAL.mission_loss": {
+  "mean": -25.6313,
+  "ci": [
+   -26.0017,
+   -25.244
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 2.42e-52
+ },
+ "paired.B_severe.PROPORTIONAL.mission_success_rate": {
+  "mean": 0.486,
+  "ci": [
+   0.4693,
+   0.502
+  ],
+  "WTL": [
+   298,
+   2,
+   0
+  ],
+  "n_eff": 298,
+  "p": 2.44e-52
+ },
+ "paired.B_severe.PROPORTIONAL.reconfig_mission": {
+  "mean": -2003.7867,
+  "ci": [
+   -2012.9468,
+   -1994.8658
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.06e-51
+ },
+ "paired.B_severe.PROPORTIONAL.total_reconfig_cost": {
+  "mean": -3095.4333,
+  "ci": [
+   -3104.7002,
+   -3086.5932
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.06e-51
+ },
+ "paired.B_severe.MISSION_AWARE.mission_loss": {
+  "mean": 0.6417,
+  "ci": [
+   0.1265,
+   1.1771
+  ],
+  "WTL": [
+   87,
+   86,
+   127
+  ],
+  "n_eff": 214,
+  "p": 0.00463
+ },
+ "paired.B_severe.MISSION_AWARE.mission_success_rate": {
+  "mean": -0.0287,
+  "ci": [
+   -0.0513,
+   -0.0067
+  ],
+  "WTL": [
+   74,
+   115,
+   111
+  ],
+  "n_eff": 185,
+  "p": 0.0153
+ },
+ "paired.B_severe.MISSION_AWARE.reconfig_mission": {
+  "mean": -1254.3467,
+  "ci": [
+   -1261.7337,
+   -1247.1993
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.05e-51
+ },
+ "paired.B_severe.MISSION_AWARE.total_reconfig_cost": {
+  "mean": -1519.1,
+  "ci": [
+   -1526.7133,
+   -1511.733
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.05e-51
+ },
+ "paired.B_severe.MYOPIC_OPT.mission_loss": {
+  "mean": 0.6252,
+  "ci": [
+   0.1118,
+   1.1422
+  ],
+  "WTL": [
+   89,
+   85,
+   126
+  ],
+  "n_eff": 215,
+  "p": 0.00506
+ },
+ "paired.B_severe.MYOPIC_OPT.mission_success_rate": {
+  "mean": -0.028,
+  "ci": [
+   -0.0494,
+   -0.0067
+  ],
+  "WTL": [
+   76,
+   114,
+   110
+  ],
+  "n_eff": 186,
+  "p": 0.0153
+ },
+ "paired.B_severe.MYOPIC_OPT.reconfig_mission": {
+  "mean": -67.8867,
+  "ci": [
+   -68.6733,
+   -67.0867
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 4.65e-51
+ },
+ "paired.B_severe.MYOPIC_OPT.total_reconfig_cost": {
+  "mean": 14.9667,
+  "ci": [
+   14.1132,
+   15.8467
+  ],
+  "WTL": [
+   3,
+   7,
+   290
+  ],
+  "n_eff": 293,
+  "p": 1.1e-49
+ },
+ "paired.B_severe.MARS_V0.mission_loss": {
+  "mean": 0.4913,
+  "ci": [
+   0.0293,
+   0.9497
+  ],
+  "WTL": [
+   66,
+   134,
+   100
+  ],
+  "n_eff": 166,
+  "p": 0.0546
+ },
+ "paired.B_severe.MARS_V0.mission_success_rate": {
+  "mean": -0.0247,
+  "ci": [
+   -0.044,
+   -0.0053
+  ],
+  "WTL": [
+   55,
+   151,
+   94
+  ],
+  "n_eff": 149,
+  "p": 0.0256
+ },
+ "paired.B_severe.MARS_V0.reconfig_mission": {
+  "mean": -372.9733,
+  "ci": [
+   -376.7137,
+   -369.26
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6e-51
+ },
+ "paired.B_severe.MARS_V0.total_reconfig_cost": {
+  "mean": -615.6867,
+  "ci": [
+   -627.6673,
+   -604.153
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.07e-51
+ },
+ "paired.C_concurrent.STATIC.mission_loss": {
+  "mean": -11.5945,
+  "ci": [
+   -12.1115,
+   -11.0921
+  ],
+  "WTL": [
+   299,
+   0,
+   1
+  ],
+  "n_eff": 300,
+  "p": 7.19e-52
+ },
+ "paired.C_concurrent.STATIC.mission_success_rate": {
+  "mean": 0.3313,
+  "ci": [
+   0.3133,
+   0.3507
+  ],
+  "WTL": [
+   278,
+   20,
+   2
+  ],
+  "n_eff": 280,
+  "p": 6.07e-49
+ },
+ "paired.C_concurrent.STATIC.reconfig_mission": {
+  "mean": 157.68,
+  "ci": [
+   157.1798,
+   158.22
+  ],
+  "WTL": [
+   0,
+   0,
+   300
+  ],
+  "n_eff": 300,
+  "p": 3.36e-51
+ },
+ "paired.C_concurrent.STATIC.total_reconfig_cost": {
+  "mean": 227.0467,
+  "ci": [
+   226.4332,
+   227.66
+  ],
+  "WTL": [
+   0,
+   0,
+   300
+  ],
+  "n_eff": 300,
+  "p": 4.23e-51
+ },
+ "paired.C_concurrent.PROPORTIONAL.mission_loss": {
+  "mean": -7.6937,
+  "ci": [
+   -8.1834,
+   -7.1774
+  ],
+  "WTL": [
+   288,
+   7,
+   5
+  ],
+  "n_eff": 293,
+  "p": 1.41e-50
+ },
+ "paired.C_concurrent.PROPORTIONAL.mission_success_rate": {
+  "mean": 0.2287,
+  "ci": [
+   0.2093,
+   0.2473
+  ],
+  "WTL": [
+   249,
+   46,
+   5
+  ],
+  "n_eff": 254,
+  "p": 1.83e-41
+ },
+ "paired.C_concurrent.PROPORTIONAL.reconfig_mission": {
+  "mean": -1674.9,
+  "ci": [
+   -1683.3143,
+   -1666.745
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.06e-51
+ },
+ "paired.C_concurrent.PROPORTIONAL.total_reconfig_cost": {
+  "mean": -3581.7467,
+  "ci": [
+   -3592.9405,
+   -3570.7265
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.07e-51
+ },
+ "paired.C_concurrent.MISSION_AWARE.mission_loss": {
+  "mean": -0.1357,
+  "ci": [
+   -0.5317,
+   0.242
+  ],
+  "WTL": [
+   63,
+   182,
+   55
+  ],
+  "n_eff": 118,
+  "p": 0.668
+ },
+ "paired.C_concurrent.MISSION_AWARE.mission_success_rate": {
+  "mean": 0.006,
+  "ci": [
+   -0.0087,
+   0.022
+  ],
+  "WTL": [
+   54,
+   198,
+   48
+  ],
+  "n_eff": 102,
+  "p": 0.534
+ },
+ "paired.C_concurrent.MISSION_AWARE.reconfig_mission": {
+  "mean": -1088.38,
+  "ci": [
+   -1095.4067,
+   -1081.3643
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.05e-51
+ },
+ "paired.C_concurrent.MISSION_AWARE.total_reconfig_cost": {
+  "mean": -1423.2467,
+  "ci": [
+   -1430.6733,
+   -1415.5
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.06e-51
+ },
+ "paired.C_concurrent.MYOPIC_OPT.mission_loss": {
+  "mean": -0.0752,
+  "ci": [
+   -0.5665,
+   0.385
+  ],
+  "WTL": [
+   81,
+   145,
+   74
+  ],
+  "n_eff": 155,
+  "p": 0.732
+ },
+ "paired.C_concurrent.MYOPIC_OPT.mission_success_rate": {
+  "mean": 0.004,
+  "ci": [
+   -0.0147,
+   0.024
+  ],
+  "WTL": [
+   70,
+   168,
+   62
+  ],
+  "n_eff": 132,
+  "p": 0.807
+ },
+ "paired.C_concurrent.MYOPIC_OPT.reconfig_mission": {
+  "mean": -94.68,
+  "ci": [
+   -97.6403,
+   -91.7132
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 4.89e-51
+ },
+ "paired.C_concurrent.MYOPIC_OPT.total_reconfig_cost": {
+  "mean": -11.3133,
+  "ci": [
+   -14.3335,
+   -8.2865
+  ],
+  "WTL": [
+   210,
+   1,
+   89
+  ],
+  "n_eff": 299,
+  "p": 2.15e-09
+ },
+ "paired.C_concurrent.MARS_V0.mission_loss": {
+  "mean": -0.0348,
+  "ci": [
+   -0.55,
+   0.4419
+  ],
+  "WTL": [
+   76,
+   146,
+   78
+  ],
+  "n_eff": 154,
+  "p": 0.913
+ },
+ "paired.C_concurrent.MARS_V0.mission_success_rate": {
+  "mean": 0.0013,
+  "ci": [
+   -0.0173,
+   0.0207
+  ],
+  "WTL": [
+   70,
+   164,
+   66
+  ],
+  "n_eff": 136,
+  "p": 0.837
+ },
+ "paired.C_concurrent.MARS_V0.reconfig_mission": {
+  "mean": -357.7933,
+  "ci": [
+   -361.0868,
+   -354.46
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 5.97e-51
+ },
+ "paired.C_concurrent.MARS_V0.total_reconfig_cost": {
+  "mean": -794.2867,
+  "ci": [
+   -805.1608,
+   -783.2397
+  ],
+  "WTL": [
+   300,
+   0,
+   0
+  ],
+  "n_eff": 300,
+  "p": 6.07e-51
+ },
+ "tasks.A_benign.STATIC.per_task_success": {
+  "K1": 0.907,
+  "K2": 0.0,
+  "K3": 0.883,
+  "K4": 0.0,
+  "K5": 0.013
+ },
+ "tasks.A_benign.STATIC.deadline_fail_share": 0.4,
+ "tasks.A_benign.STATIC.K3_finish_mean": 120.01,
+ "tasks.A_benign.STATIC.K3_severity_at_finish": 0.3483,
+ "latency.A_benign.STATIC": {
+  "mission": 15.78,
+  "after": 17.38
+ },
+ "mission_end.A_benign.STATIC": 198.97,
+ "tasks.A_benign.PROPORTIONAL.per_task_success": {
+  "K1": 0.94,
+  "K2": 0.85,
+  "K3": 0.897,
+  "K4": 0.877,
+  "K5": 0.0
+ },
+ "tasks.A_benign.PROPORTIONAL.deadline_fail_share": 0.0187,
+ "tasks.A_benign.PROPORTIONAL.K3_finish_mean": 116.85,
+ "tasks.A_benign.PROPORTIONAL.K3_severity_at_finish": 0.3446,
+ "latency.A_benign.PROPORTIONAL": {
+  "mission": 18.38,
+  "after": 20.35
+ },
+ "mission_end.A_benign.PROPORTIONAL": 192.39,
+ "tasks.A_benign.MISSION_AWARE.per_task_success": {
+  "K1": 0.923,
+  "K2": 0.943,
+  "K3": 0.89,
+  "K4": 0.897,
+  "K5": 0.877
+ },
+ "tasks.A_benign.MISSION_AWARE.deadline_fail_share": 0.0,
+ "tasks.A_benign.MISSION_AWARE.K3_finish_mean": 83.0,
+ "tasks.A_benign.MISSION_AWARE.K3_severity_at_finish": 0.2918,
+ "latency.A_benign.MISSION_AWARE": {
+  "mission": 17.45,
+  "after": 19.24
+ },
+ "mission_end.A_benign.MISSION_AWARE": 133.07,
+ "tasks.A_benign.MYOPIC_OPT.per_task_success": {
+  "K1": 0.927,
+  "K2": 0.94,
+  "K3": 0.887,
+  "K4": 0.897,
+  "K5": 0.88
+ },
+ "tasks.A_benign.MYOPIC_OPT.deadline_fail_share": 0.0,
+ "tasks.A_benign.MYOPIC_OPT.K3_finish_mean": 83.02,
+ "tasks.A_benign.MYOPIC_OPT.K3_severity_at_finish": 0.2917,
+ "latency.A_benign.MYOPIC_OPT": {
+  "mission": 16.87,
+  "after": 13.7
+ },
+ "mission_end.A_benign.MYOPIC_OPT": 133.02,
+ "tasks.A_benign.MARS_V0.per_task_success": {
+  "K1": 0.947,
+  "K2": 0.923,
+  "K3": 0.913,
+  "K4": 0.92,
+  "K5": 0.917
+ },
+ "tasks.A_benign.MARS_V0.deadline_fail_share": 0.0,
+ "tasks.A_benign.MARS_V0.K3_finish_mean": 87.08,
+ "tasks.A_benign.MARS_V0.K3_severity_at_finish": 0.2995,
+ "latency.A_benign.MARS_V0": {
+  "mission": 17.42,
+  "after": 14.31
+ },
+ "mission_end.A_benign.MARS_V0": 139.81,
+ "tasks.A_benign.MARS.per_task_success": {
+  "K1": 0.917,
+  "K2": 0.93,
+  "K3": 0.887,
+  "K4": 0.873,
+  "K5": 0.937
+ },
+ "tasks.A_benign.MARS.deadline_fail_share": 0.0,
+ "tasks.A_benign.MARS.K3_finish_mean": 90.51,
+ "tasks.A_benign.MARS.K3_severity_at_finish": 0.3033,
+ "latency.A_benign.MARS": {
+  "mission": 17.83,
+  "after": 19.28
+ },
+ "mission_end.A_benign.MARS": 143.75,
+ "tasks.B_severe.STATIC.per_task_success": {
+  "K1": 0.907,
+  "K2": 0.0,
+  "K3": 0.0,
+  "K4": 0.0,
+  "K5": 0.0
+ },
+ "tasks.B_severe.STATIC.deadline_fail_share": 0.8,
+ "tasks.B_severe.STATIC.K3_finish_mean": 133.07,
+ "tasks.B_severe.STATIC.K3_severity_at_finish": 0.7698,
+ "latency.B_severe.STATIC": {
+  "mission": 18.93,
+  "after": 20.46
+ },
+ "mission_end.B_severe.STATIC": 223.45,
+ "tasks.B_severe.PROPORTIONAL.per_task_success": {
+  "K1": 0.907,
+  "K2": 0.0,
+  "K3": 0.0,
+  "K4": 0.0,
+  "K5": 0.0
+ },
+ "tasks.B_severe.PROPORTIONAL.deadline_fail_share": 0.7987,
+ "tasks.B_severe.PROPORTIONAL.K3_finish_mean": 129.82,
+ "tasks.B_severe.PROPORTIONAL.K3_severity_at_finish": 0.7623,
+ "latency.B_severe.PROPORTIONAL": {
+  "mission": 22.21,
+  "after": 24.0
+ },
+ "mission_end.B_severe.PROPORTIONAL": 217.3,
+ "tasks.B_severe.MISSION_AWARE.per_task_success": {
+  "K1": 0.93,
+  "K2": 0.873,
+  "K3": 0.8,
+  "K4": 0.877,
+  "K5": 0.0
+ },
+ "tasks.B_severe.MISSION_AWARE.deadline_fail_share": 0.0,
+ "tasks.B_severe.MISSION_AWARE.K3_finish_mean": 90.49,
+ "tasks.B_severe.MISSION_AWARE.K3_severity_at_finish": 0.7032,
+ "latency.B_severe.MISSION_AWARE": {
+  "mission": 21.02,
+  "after": 22.35
+ },
+ "mission_end.B_severe.MISSION_AWARE": 146.94,
+ "tasks.B_severe.MYOPIC_OPT.per_task_success": {
+  "K1": 0.93,
+  "K2": 0.873,
+  "K3": 0.8,
+  "K4": 0.873,
+  "K5": 0.0
+ },
+ "tasks.B_severe.MYOPIC_OPT.deadline_fail_share": 0.0,
+ "tasks.B_severe.MYOPIC_OPT.K3_finish_mean": 90.68,
+ "tasks.B_severe.MYOPIC_OPT.K3_severity_at_finish": 0.7028,
+ "latency.B_severe.MYOPIC_OPT": {
+  "mission": 19.94,
+  "after": 16.74
+ },
+ "mission_end.B_severe.MYOPIC_OPT": 146.38,
+ "tasks.B_severe.MARS_V0.per_task_success": {
+  "K1": 0.933,
+  "K2": 0.9,
+  "K3": 0.747,
+  "K4": 0.88,
+  "K5": 0.0
+ },
+ "tasks.B_severe.MARS_V0.deadline_fail_share": 0.0,
+ "tasks.B_severe.MARS_V0.K3_finish_mean": 94.8,
+ "tasks.B_severe.MARS_V0.K3_severity_at_finish": 0.7119,
+ "latency.B_severe.MARS_V0": {
+  "mission": 20.96,
+  "after": 16.81
+ },
+ "mission_end.B_severe.MARS_V0": 154.68,
+ "tasks.B_severe.MARS.per_task_success": {
+  "K1": 0.867,
+  "K2": 0.893,
+  "K3": 0.69,
+  "K4": 0.887,
+  "K5": 0.0
+ },
+ "tasks.B_severe.MARS.deadline_fail_share": 0.0,
+ "tasks.B_severe.MARS.K3_finish_mean": 98.43,
+ "tasks.B_severe.MARS.K3_severity_at_finish": 0.7171,
+ "latency.B_severe.MARS": {
+  "mission": 21.02,
+  "after": 22.36
+ },
+ "mission_end.B_severe.MARS": 157.57,
+ "tasks.C_concurrent.STATIC.per_task_success": {
+  "K1": 0.907,
+  "K2": 0.0,
+  "K3": 0.93,
+  "K4": 0.907,
+  "K5": 0.18
+ },
+ "tasks.C_concurrent.STATIC.deadline_fail_share": 0.2,
+ "tasks.C_concurrent.STATIC.K3_finish_mean": 58.68,
+ "tasks.C_concurrent.STATIC.K3_severity_at_finish": 0.2576,
+ "latency.C_concurrent.STATIC": {
+  "mission": 15.63,
+  "after": 17.22
+ },
+ "mission_end.C_concurrent.STATIC": 172.2,
+ "tasks.C_concurrent.PROPORTIONAL.per_task_success": {
+  "K1": 0.94,
+  "K2": 0.707,
+  "K3": 0.903,
+  "K4": 0.883,
+  "K5": 0.003
+ },
+ "tasks.C_concurrent.PROPORTIONAL.deadline_fail_share": 0.048,
+ "tasks.C_concurrent.PROPORTIONAL.K3_finish_mean": 65.33,
+ "tasks.C_concurrent.PROPORTIONAL.K3_severity_at_finish": 0.2634,
+ "latency.C_concurrent.PROPORTIONAL": {
+  "mission": 18.17,
+  "after": 20.11
+ },
+ "mission_end.C_concurrent.PROPORTIONAL": 160.17,
+ "tasks.C_concurrent.MISSION_AWARE.per_task_success": {
+  "K1": 0.923,
+  "K2": 0.923,
+  "K3": 0.913,
+  "K4": 0.907,
+  "K5": 0.883
+ },
+ "tasks.C_concurrent.MISSION_AWARE.deadline_fail_share": 0.0,
+ "tasks.C_concurrent.MISSION_AWARE.K3_finish_mean": 40.27,
+ "tasks.C_concurrent.MISSION_AWARE.K3_severity_at_finish": 0.2281,
+ "latency.C_concurrent.MISSION_AWARE": {
+  "mission": 17.29,
+  "after": 19.22
+ },
+ "mission_end.C_concurrent.MISSION_AWARE": 127.14,
+ "tasks.C_concurrent.MYOPIC_OPT.per_task_success": {
+  "K1": 0.927,
+  "K2": 0.94,
+  "K3": 0.913,
+  "K4": 0.88,
+  "K5": 0.9
+ },
+ "tasks.C_concurrent.MYOPIC_OPT.deadline_fail_share": 0.0,
+ "tasks.C_concurrent.MYOPIC_OPT.K3_finish_mean": 50.12,
+ "tasks.C_concurrent.MYOPIC_OPT.K3_severity_at_finish": 0.245,
+ "latency.C_concurrent.MYOPIC_OPT": {
+  "mission": 16.11,
+  "after": 13.63
+ },
+ "mission_end.C_concurrent.MYOPIC_OPT": 118.9,
+ "tasks.C_concurrent.MARS_V0.per_task_success": {
+  "K1": 0.947,
+  "K2": 0.923,
+  "K3": 0.9,
+  "K4": 0.893,
+  "K5": 0.91
+ },
+ "tasks.C_concurrent.MARS_V0.deadline_fail_share": 0.0,
+ "tasks.C_concurrent.MARS_V0.K3_finish_mean": 44.37,
+ "tasks.C_concurrent.MARS_V0.K3_severity_at_finish": 0.2339,
+ "latency.C_concurrent.MARS_V0": {
+  "mission": 17.04,
+  "after": 14.28
+ },
+ "mission_end.C_concurrent.MARS_V0": 132.3,
+ "tasks.C_concurrent.MARS.per_task_success": {
+  "K1": 0.917,
+  "K2": 0.933,
+  "K3": 0.933,
+  "K4": 0.933,
+  "K5": 0.863
+ },
+ "tasks.C_concurrent.MARS.deadline_fail_share": 0.0,
+ "tasks.C_concurrent.MARS.K3_finish_mean": 51.97,
+ "tasks.C_concurrent.MARS.K3_severity_at_finish": 0.2458,
+ "latency.C_concurrent.MARS": {
+  "mission": 17.17,
+  "after": 19.2
+ },
+ "mission_end.C_concurrent.MARS": 129.3,
+ "sweep.total_prbs.50.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.50.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.50.MISSION_AWARE": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.50.MYOPIC_OPT": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.50.MARS_V0": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.50.MARS": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.55.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 45.28,
+  "reconfig": 4.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.55.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 604.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.55.MISSION_AWARE": {
+  "success": 0.44,
+  "ci": [
+   0.42,
+   0.46
+  ],
+  "cvar": 31.75,
+  "reconfig": 60.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.55.MYOPIC_OPT": {
+  "success": 0.44,
+  "ci": [
+   0.42,
+   0.46
+  ],
+  "cvar": 31.75,
+  "reconfig": 50.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.55.MARS_V0": {
+  "success": 0.442,
+  "ci": [
+   0.422,
+   0.462
+  ],
+  "cvar": 31.8,
+  "reconfig": 98.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.55.MARS": {
+  "success": 0.146,
+  "ci": [
+   0.128,
+   0.164
+  ],
+  "cvar": 40.02,
+  "reconfig": 51.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.60.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 40.87,
+  "reconfig": 8.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.60.PROPORTIONAL": {
+  "success": 0.006,
+  "ci": [
+   0.0,
+   0.014
+  ],
+  "cvar": 40.87,
+  "reconfig": 1318.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.60.MISSION_AWARE": {
+  "success": 0.754,
+  "ci": [
+   0.73,
+   0.776
+  ],
+  "cvar": 23.41,
+  "reconfig": 180.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.60.MYOPIC_OPT": {
+  "success": 0.754,
+  "ci": [
+   0.73,
+   0.776
+  ],
+  "cvar": 23.41,
+  "reconfig": 100.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.60.MARS_V0": {
+  "success": 0.748,
+  "ci": [
+   0.722,
+   0.77
+  ],
+  "cvar": 23.41,
+  "reconfig": 194.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.60.MARS": {
+  "success": 0.538,
+  "ci": [
+   0.516,
+   0.558
+  ],
+  "cvar": 26.78,
+  "reconfig": 91.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.70.STATIC": {
+  "success": 0.186,
+  "ci": [
+   0.176,
+   0.196
+  ],
+  "cvar": 38.38,
+  "reconfig": 8.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.70.PROPORTIONAL": {
+  "success": 0.384,
+  "ci": [
+   0.358,
+   0.41
+  ],
+  "cvar": 33.23,
+  "reconfig": 2346.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.70.MISSION_AWARE": {
+  "success": 0.908,
+  "ci": [
+   0.88,
+   0.936
+  ],
+  "cvar": 20.6,
+  "reconfig": 407.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.70.MYOPIC_OPT": {
+  "success": 0.908,
+  "ci": [
+   0.88,
+   0.936
+  ],
+  "cvar": 20.6,
+  "reconfig": 194.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.70.MARS_V0": {
+  "success": 0.916,
+  "ci": [
+   0.888,
+   0.94
+  ],
+  "cvar": 19.72,
+  "reconfig": 438.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.70.MARS": {
+  "success": 0.84,
+  "ci": [
+   0.814,
+   0.866
+  ],
+  "cvar": 21.59,
+  "reconfig": 183.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.80.STATIC": {
+  "success": 0.378,
+  "ci": [
+   0.362,
+   0.392
+  ],
+  "cvar": 36.18,
+  "reconfig": 12.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.80.PROPORTIONAL": {
+  "success": 0.6,
+  "ci": [
+   0.568,
+   0.63
+  ],
+  "cvar": 27.0,
+  "reconfig": 3008.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.80.MISSION_AWARE": {
+  "success": 0.926,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 18.46,
+  "reconfig": 598.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.80.MYOPIC_OPT": {
+  "success": 0.926,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 18.46,
+  "reconfig": 290.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.80.MARS_V0": {
+  "success": 0.934,
+  "ci": [
+   0.91,
+   0.954
+  ],
+  "cvar": 17.8,
+  "reconfig": 628.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.80.MARS": {
+  "success": 0.918,
+  "ci": [
+   0.892,
+   0.942
+  ],
+  "cvar": 19.5,
+  "reconfig": 230.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.90.STATIC": {
+  "success": 0.378,
+  "ci": [
+   0.362,
+   0.392
+  ],
+  "cvar": 36.18,
+  "reconfig": 123.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.90.PROPORTIONAL": {
+  "success": 0.706,
+  "ci": [
+   0.682,
+   0.73
+  ],
+  "cvar": 24.8,
+  "reconfig": 3431.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.90.MISSION_AWARE": {
+  "success": 0.934,
+  "ci": [
+   0.912,
+   0.956
+  ],
+  "cvar": 17.58,
+  "reconfig": 1255.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.90.MYOPIC_OPT": {
+  "success": 0.934,
+  "ci": [
+   0.912,
+   0.956
+  ],
+  "cvar": 17.58,
+  "reconfig": 324.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.90.MARS_V0": {
+  "success": 0.922,
+  "ci": [
+   0.898,
+   0.944
+  ],
+  "cvar": 17.91,
+  "reconfig": 912.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.90.MARS": {
+  "success": 0.936,
+  "ci": [
+   0.914,
+   0.956
+  ],
+  "cvar": 17.19,
+  "reconfig": 271.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.100.STATIC": {
+  "success": 0.374,
+  "ci": [
+   0.36,
+   0.386
+  ],
+  "cvar": 36.18,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.100.PROPORTIONAL": {
+  "success": 0.722,
+  "ci": [
+   0.7,
+   0.744
+  ],
+  "cvar": 23.98,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.100.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.100.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.100.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.100.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.120.STATIC": {
+  "success": 0.412,
+  "ci": [
+   0.392,
+   0.432
+  ],
+  "cvar": 35.9,
+  "reconfig": 16.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.120.PROPORTIONAL": {
+  "success": 0.706,
+  "ci": [
+   0.68,
+   0.73
+  ],
+  "cvar": 25.97,
+  "reconfig": 4219.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.120.MISSION_AWARE": {
+  "success": 0.934,
+  "ci": [
+   0.912,
+   0.956
+  ],
+  "cvar": 17.41,
+  "reconfig": 2276.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.120.MYOPIC_OPT": {
+  "success": 0.94,
+  "ci": [
+   0.914,
+   0.964
+  ],
+  "cvar": 18.95,
+  "reconfig": 190.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.120.MARS_V0": {
+  "success": 0.918,
+  "ci": [
+   0.894,
+   0.942
+  ],
+  "cvar": 18.79,
+  "reconfig": 1291.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.120.MARS": {
+  "success": 0.908,
+  "ci": [
+   0.882,
+   0.932
+  ],
+  "cvar": 19.61,
+  "reconfig": 391.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.150.STATIC": {
+  "success": 0.434,
+  "ci": [
+   0.412,
+   0.456
+  ],
+  "cvar": 35.62,
+  "reconfig": 20.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.150.PROPORTIONAL": {
+  "success": 0.35,
+  "ci": [
+   0.328,
+   0.37
+  ],
+  "cvar": 45.53,
+  "reconfig": 4098.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.150.MISSION_AWARE": {
+  "success": 0.69,
+  "ci": [
+   0.666,
+   0.714
+  ],
+  "cvar": 27.14,
+  "reconfig": 2489.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.150.MYOPIC_OPT": {
+  "success": 0.706,
+  "ci": [
+   0.682,
+   0.73
+  ],
+  "cvar": 26.87,
+  "reconfig": 140.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.150.MARS_V0": {
+  "success": 0.678,
+  "ci": [
+   0.656,
+   0.704
+  ],
+  "cvar": 27.91,
+  "reconfig": 1530.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.150.MARS": {
+  "success": 0.684,
+  "ci": [
+   0.658,
+   0.708
+  ],
+  "cvar": 28.54,
+  "reconfig": 566.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.200.STATIC": {
+  "success": 0.184,
+  "ci": [
+   0.172,
+   0.194
+  ],
+  "cvar": 47.18,
+  "reconfig": 1528.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.200.PROPORTIONAL": {
+  "success": 0.184,
+  "ci": [
+   0.172,
+   0.194
+  ],
+  "cvar": 47.18,
+  "reconfig": 2626.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.200.MISSION_AWARE": {
+  "success": 0.19,
+  "ci": [
+   0.18,
+   0.198
+  ],
+  "cvar": 46.35,
+  "reconfig": 2354.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.200.MYOPIC_OPT": {
+  "success": 0.19,
+  "ci": [
+   0.18,
+   0.198
+  ],
+  "cvar": 46.35,
+  "reconfig": 30.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.200.MARS_V0": {
+  "success": 0.186,
+  "ci": [
+   0.176,
+   0.194
+  ],
+  "cvar": 46.9,
+  "reconfig": 642.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs.200.MARS": {
+  "success": 0.19,
+  "ci": [
+   0.18,
+   0.198
+  ],
+  "cvar": 46.35,
+  "reconfig": 1334.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.50.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.50.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.50.MISSION_AWARE": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.50.MYOPIC_OPT": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.50.MARS_V0": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.50.MARS": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 0.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.55.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 45.28,
+  "reconfig": 4.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.55.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.73,
+  "reconfig": 604.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.55.MISSION_AWARE": {
+  "success": 0.44,
+  "ci": [
+   0.42,
+   0.46
+  ],
+  "cvar": 31.75,
+  "reconfig": 60.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.55.MYOPIC_OPT": {
+  "success": 0.44,
+  "ci": [
+   0.42,
+   0.46
+  ],
+  "cvar": 31.75,
+  "reconfig": 50.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.55.MARS_V0": {
+  "success": 0.442,
+  "ci": [
+   0.422,
+   0.462
+  ],
+  "cvar": 31.8,
+  "reconfig": 98.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.55.MARS": {
+  "success": 0.146,
+  "ci": [
+   0.128,
+   0.164
+  ],
+  "cvar": 40.02,
+  "reconfig": 51.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.60.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 40.87,
+  "reconfig": 8.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.60.PROPORTIONAL": {
+  "success": 0.006,
+  "ci": [
+   0.0,
+   0.014
+  ],
+  "cvar": 40.87,
+  "reconfig": 1318.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.60.MISSION_AWARE": {
+  "success": 0.754,
+  "ci": [
+   0.73,
+   0.776
+  ],
+  "cvar": 23.41,
+  "reconfig": 180.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.60.MYOPIC_OPT": {
+  "success": 0.754,
+  "ci": [
+   0.73,
+   0.776
+  ],
+  "cvar": 23.41,
+  "reconfig": 100.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.60.MARS_V0": {
+  "success": 0.748,
+  "ci": [
+   0.722,
+   0.77
+  ],
+  "cvar": 23.41,
+  "reconfig": 194.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.60.MARS": {
+  "success": 0.538,
+  "ci": [
+   0.516,
+   0.558
+  ],
+  "cvar": 26.78,
+  "reconfig": 91.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.70.STATIC": {
+  "success": 0.186,
+  "ci": [
+   0.176,
+   0.196
+  ],
+  "cvar": 38.38,
+  "reconfig": 8.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.70.PROPORTIONAL": {
+  "success": 0.384,
+  "ci": [
+   0.358,
+   0.41
+  ],
+  "cvar": 33.23,
+  "reconfig": 2346.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.70.MISSION_AWARE": {
+  "success": 0.92,
+  "ci": [
+   0.898,
+   0.942
+  ],
+  "cvar": 18.29,
+  "reconfig": 583.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.70.MYOPIC_OPT": {
+  "success": 0.92,
+  "ci": [
+   0.898,
+   0.942
+  ],
+  "cvar": 18.29,
+  "reconfig": 182.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.70.MARS_V0": {
+  "success": 0.93,
+  "ci": [
+   0.91,
+   0.95
+  ],
+  "cvar": 17.47,
+  "reconfig": 480.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.70.MARS": {
+  "success": 0.84,
+  "ci": [
+   0.814,
+   0.866
+  ],
+  "cvar": 21.59,
+  "reconfig": 183.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.80.STATIC": {
+  "success": 0.378,
+  "ci": [
+   0.362,
+   0.392
+  ],
+  "cvar": 36.18,
+  "reconfig": 12.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.80.PROPORTIONAL": {
+  "success": 0.6,
+  "ci": [
+   0.568,
+   0.63
+  ],
+  "cvar": 27.0,
+  "reconfig": 3007.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.80.MISSION_AWARE": {
+  "success": 0.928,
+  "ci": [
+   0.906,
+   0.948
+  ],
+  "cvar": 17.52,
+  "reconfig": 1189.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.80.MYOPIC_OPT": {
+  "success": 0.934,
+  "ci": [
+   0.914,
+   0.954
+  ],
+  "cvar": 17.52,
+  "reconfig": 242.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.80.MARS_V0": {
+  "success": 0.938,
+  "ci": [
+   0.916,
+   0.958
+  ],
+  "cvar": 18.02,
+  "reconfig": 721.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.80.MARS": {
+  "success": 0.914,
+  "ci": [
+   0.89,
+   0.936
+  ],
+  "cvar": 18.84,
+  "reconfig": 229.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.90.STATIC": {
+  "success": 0.378,
+  "ci": [
+   0.362,
+   0.392
+  ],
+  "cvar": 36.18,
+  "reconfig": 123.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.90.PROPORTIONAL": {
+  "success": 0.706,
+  "ci": [
+   0.682,
+   0.73
+  ],
+  "cvar": 24.8,
+  "reconfig": 3430.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.90.MISSION_AWARE": {
+  "success": 0.918,
+  "ci": [
+   0.894,
+   0.94
+  ],
+  "cvar": 19.17,
+  "reconfig": 1441.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.90.MYOPIC_OPT": {
+  "success": 0.916,
+  "ci": [
+   0.892,
+   0.938
+  ],
+  "cvar": 19.72,
+  "reconfig": 290.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.90.MARS_V0": {
+  "success": 0.952,
+  "ci": [
+   0.93,
+   0.97
+  ],
+  "cvar": 17.25,
+  "reconfig": 921.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.90.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.946
+  ],
+  "cvar": 18.29,
+  "reconfig": 269.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.100.STATIC": {
+  "success": 0.374,
+  "ci": [
+   0.36,
+   0.386
+  ],
+  "cvar": 36.18,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.100.PROPORTIONAL": {
+  "success": 0.722,
+  "ci": [
+   0.7,
+   0.744
+  ],
+  "cvar": 23.98,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.100.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.100.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.100.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.100.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.120.STATIC": {
+  "success": 0.412,
+  "ci": [
+   0.392,
+   0.432
+  ],
+  "cvar": 35.9,
+  "reconfig": 16.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.120.PROPORTIONAL": {
+  "success": 0.726,
+  "ci": [
+   0.704,
+   0.746
+  ],
+  "cvar": 23.8,
+  "reconfig": 4565.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.120.MISSION_AWARE": {
+  "success": 0.922,
+  "ci": [
+   0.896,
+   0.944
+  ],
+  "cvar": 18.73,
+  "reconfig": 2009.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.120.MYOPIC_OPT": {
+  "success": 0.928,
+  "ci": [
+   0.906,
+   0.948
+  ],
+  "cvar": 18.02,
+  "reconfig": 348.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.120.MARS_V0": {
+  "success": 0.938,
+  "ci": [
+   0.916,
+   0.958
+  ],
+  "cvar": 17.14,
+  "reconfig": 1370.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.120.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.946
+  ],
+  "cvar": 18.29,
+  "reconfig": 355.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.150.STATIC": {
+  "success": 0.434,
+  "ci": [
+   0.412,
+   0.456
+  ],
+  "cvar": 35.62,
+  "reconfig": 20.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.150.PROPORTIONAL": {
+  "success": 0.776,
+  "ci": [
+   0.746,
+   0.804
+  ],
+  "cvar": 23.86,
+  "reconfig": 5673.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.150.MISSION_AWARE": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 18.02,
+  "reconfig": 2274.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.150.MYOPIC_OPT": {
+  "success": 0.932,
+  "ci": [
+   0.91,
+   0.954
+  ],
+  "cvar": 18.02,
+  "reconfig": 404.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.150.MARS_V0": {
+  "success": 0.926,
+  "ci": [
+   0.904,
+   0.946
+  ],
+  "cvar": 17.8,
+  "reconfig": 2095.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.150.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.944
+  ],
+  "cvar": 18.4,
+  "reconfig": 441.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.200.STATIC": {
+  "success": 0.44,
+  "ci": [
+   0.42,
+   0.462
+  ],
+  "cvar": 33.7,
+  "reconfig": 28.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.200.PROPORTIONAL": {
+  "success": 0.818,
+  "ci": [
+   0.786,
+   0.846
+  ],
+  "cvar": 23.53,
+  "reconfig": 7303.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.200.MISSION_AWARE": {
+  "success": 0.932,
+  "ci": [
+   0.91,
+   0.954
+  ],
+  "cvar": 17.8,
+  "reconfig": 2711.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.200.MYOPIC_OPT": {
+  "success": 0.942,
+  "ci": [
+   0.922,
+   0.962
+  ],
+  "cvar": 17.52,
+  "reconfig": 510.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.200.MARS_V0": {
+  "success": 0.916,
+  "ci": [
+   0.892,
+   0.94
+  ],
+  "cvar": 17.52,
+  "reconfig": 2428.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.total_prbs_scaledcaps.200.MARS": {
+  "success": 0.916,
+  "ci": [
+   0.892,
+   0.938
+  ],
+  "cvar": 18.4,
+  "reconfig": 587.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.0.STATIC": {
+  "success": 0.716,
+  "ci": [
+   0.692,
+   0.74
+  ],
+  "cvar": 25.92,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.0.PROPORTIONAL": {
+  "success": 0.932,
+  "ci": [
+   0.908,
+   0.954
+  ],
+  "cvar": 17.46,
+  "reconfig": 4063.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.0.MISSION_AWARE": {
+  "success": 0.922,
+  "ci": [
+   0.896,
+   0.946
+  ],
+  "cvar": 19.83,
+  "reconfig": 1705.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.0.MYOPIC_OPT": {
+  "success": 0.912,
+  "ci": [
+   0.884,
+   0.936
+  ],
+  "cvar": 20.22,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.0.MARS_V0": {
+  "success": 0.95,
+  "ci": [
+   0.928,
+   0.968
+  ],
+  "cvar": 17.47,
+  "reconfig": 1053.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.0.MARS": {
+  "success": 0.94,
+  "ci": [
+   0.92,
+   0.958
+  ],
+  "cvar": 16.92,
+  "reconfig": 288.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.2.STATIC": {
+  "success": 0.374,
+  "ci": [
+   0.36,
+   0.386
+  ],
+  "cvar": 36.18,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.2.PROPORTIONAL": {
+  "success": 0.722,
+  "ci": [
+   0.7,
+   0.744
+  ],
+  "cvar": 23.98,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.2.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.2.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.2.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.2.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.4.STATIC": {
+  "success": 0.29,
+  "ci": [
+   0.266,
+   0.312
+  ],
+  "cvar": 46.08,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.4.PROPORTIONAL": {
+  "success": 0.384,
+  "ci": [
+   0.346,
+   0.422
+  ],
+  "cvar": 45.03,
+  "reconfig": 3598.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.4.MISSION_AWARE": {
+  "success": 0.742,
+  "ci": [
+   0.72,
+   0.762
+  ],
+  "cvar": 22.69,
+  "reconfig": 1801.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.4.MYOPIC_OPT": {
+  "success": 0.742,
+  "ci": [
+   0.72,
+   0.762
+  ],
+  "cvar": 22.69,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.4.MARS_V0": {
+  "success": 0.726,
+  "ci": [
+   0.702,
+   0.748
+  ],
+  "cvar": 23.9,
+  "reconfig": 1169.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.4.MARS": {
+  "success": 0.736,
+  "ci": [
+   0.716,
+   0.754
+  ],
+  "cvar": 22.91,
+  "reconfig": 309.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.6.STATIC": {
+  "success": 0.178,
+  "ci": [
+   0.164,
+   0.188
+  ],
+  "cvar": 47.73,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.6.PROPORTIONAL": {
+  "success": 0.184,
+  "ci": [
+   0.172,
+   0.194
+  ],
+  "cvar": 47.18,
+  "reconfig": 3412.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.6.MISSION_AWARE": {
+  "success": 0.7,
+  "ci": [
+   0.674,
+   0.726
+  ],
+  "cvar": 25.94,
+  "reconfig": 1841.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.6.MYOPIC_OPT": {
+  "success": 0.7,
+  "ci": [
+   0.672,
+   0.726
+  ],
+  "cvar": 25.44,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.6.MARS_V0": {
+  "success": 0.71,
+  "ci": [
+   0.686,
+   0.734
+  ],
+  "cvar": 24.18,
+  "reconfig": 956.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.6.MARS": {
+  "success": 0.692,
+  "ci": [
+   0.67,
+   0.716
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.8.STATIC": {
+  "success": 0.092,
+  "ci": [
+   0.072,
+   0.11
+  ],
+  "cvar": 47.73,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.8.PROPORTIONAL": {
+  "success": 0.072,
+  "ci": [
+   0.054,
+   0.09
+  ],
+  "cvar": 47.73,
+  "reconfig": 3281.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.8.MISSION_AWARE": {
+  "success": 0.376,
+  "ci": [
+   0.362,
+   0.388
+  ],
+  "cvar": 31.27,
+  "reconfig": 1884.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.8.MYOPIC_OPT": {
+  "success": 0.376,
+  "ci": [
+   0.362,
+   0.388
+  ],
+  "cvar": 31.11,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.8.MARS_V0": {
+  "success": 0.36,
+  "ci": [
+   0.342,
+   0.376
+  ],
+  "cvar": 31.33,
+  "reconfig": 1049.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.8.MARS": {
+  "success": 0.352,
+  "ci": [
+   0.332,
+   0.368
+  ],
+  "cvar": 31.6,
+  "reconfig": 345.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.9.STATIC": {
+  "success": 0.01,
+  "ci": [
+   0.002,
+   0.02
+  ],
+  "cvar": 47.73,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.9.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.9,
+  "reconfig": 3254.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.9.MISSION_AWARE": {
+  "success": 0.368,
+  "ci": [
+   0.352,
+   0.38
+  ],
+  "cvar": 31.33,
+  "reconfig": 1897.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.9.MYOPIC_OPT": {
+  "success": 0.368,
+  "ci": [
+   0.352,
+   0.38
+  ],
+  "cvar": 31.33,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.9.MARS_V0": {
+  "success": 0.356,
+  "ci": [
+   0.336,
+   0.372
+  ],
+  "cvar": 31.6,
+  "reconfig": 1045.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.0.9.MARS": {
+  "success": 0.262,
+  "ci": [
+   0.234,
+   0.286
+  ],
+  "cvar": 34.92,
+  "reconfig": 350.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.1.0.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.9,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.1.0.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 47.9,
+  "reconfig": 3245.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.1.0.MISSION_AWARE": {
+  "success": 0.368,
+  "ci": [
+   0.352,
+   0.382
+  ],
+  "cvar": 31.6,
+  "reconfig": 1906.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.1.0.MYOPIC_OPT": {
+  "success": 0.368,
+  "ci": [
+   0.352,
+   0.382
+  ],
+  "cvar": 31.6,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.1.0.MARS_V0": {
+  "success": 0.358,
+  "ci": [
+   0.338,
+   0.376
+  ],
+  "cvar": 32.99,
+  "reconfig": 1042.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.initial_severity.1.0.MARS": {
+  "success": 0.152,
+  "ci": [
+   0.132,
+   0.17
+  ],
+  "cvar": 36.88,
+  "reconfig": 353.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.0.STATIC": {
+  "success": 0.422,
+  "ci": [
+   0.41,
+   0.434
+  ],
+  "cvar": 31.77,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.0.PROPORTIONAL": {
+  "success": 0.798,
+  "ci": [
+   0.794,
+   0.8
+  ],
+  "cvar": 17.03,
+  "reconfig": 3828.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.0.MISSION_AWARE": {
+  "success": 1.0,
+  "ci": [
+   1.0,
+   1.0
+  ],
+  "cvar": 9.88,
+  "reconfig": 1745.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.0.MYOPIC_OPT": {
+  "success": 1.0,
+  "ci": [
+   1.0,
+   1.0
+  ],
+  "cvar": 9.88,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.0.MARS_V0": {
+  "success": 1.0,
+  "ci": [
+   1.0,
+   1.0
+  ],
+  "cvar": 9.88,
+  "reconfig": 877.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.0.MARS": {
+  "success": 1.0,
+  "ci": [
+   1.0,
+   1.0
+  ],
+  "cvar": 9.88,
+  "reconfig": 296.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.005.STATIC": {
+  "success": 0.4,
+  "ci": [
+   0.388,
+   0.412
+  ],
+  "cvar": 34.25,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.005.PROPORTIONAL": {
+  "success": 0.788,
+  "ci": [
+   0.778,
+   0.796
+  ],
+  "cvar": 19.17,
+  "reconfig": 3821.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.005.MISSION_AWARE": {
+  "success": 0.972,
+  "ci": [
+   0.956,
+   0.986
+  ],
+  "cvar": 15.54,
+  "reconfig": 1750.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.005.MYOPIC_OPT": {
+  "success": 0.972,
+  "ci": [
+   0.956,
+   0.986
+  ],
+  "cvar": 15.54,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.005.MARS_V0": {
+  "success": 0.988,
+  "ci": [
+   0.978,
+   0.996
+  ],
+  "cvar": 12.52,
+  "reconfig": 931.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.005.MARS": {
+  "success": 0.978,
+  "ci": [
+   0.964,
+   0.99
+  ],
+  "cvar": 15.6,
+  "reconfig": 296.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.018.STATIC": {
+  "success": 0.374,
+  "ci": [
+   0.36,
+   0.386
+  ],
+  "cvar": 36.18,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.018.PROPORTIONAL": {
+  "success": 0.722,
+  "ci": [
+   0.7,
+   0.744
+  ],
+  "cvar": 23.98,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.018.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.018.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.018.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.018.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.04.STATIC": {
+  "success": 0.324,
+  "ci": [
+   0.302,
+   0.346
+  ],
+  "cvar": 39.44,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.04.PROPORTIONAL": {
+  "success": 0.596,
+  "ci": [
+   0.562,
+   0.63
+  ],
+  "cvar": 33.19,
+  "reconfig": 3814.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.04.MISSION_AWARE": {
+  "success": 0.816,
+  "ci": [
+   0.78,
+   0.85
+  ],
+  "cvar": 23.68,
+  "reconfig": 1775.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.04.MYOPIC_OPT": {
+  "success": 0.814,
+  "ci": [
+   0.776,
+   0.848
+  ],
+  "cvar": 23.68,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.04.MARS_V0": {
+  "success": 0.82,
+  "ci": [
+   0.782,
+   0.856
+  ],
+  "cvar": 23.57,
+  "reconfig": 1193.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.04.MARS": {
+  "success": 0.824,
+  "ci": [
+   0.79,
+   0.854
+  ],
+  "cvar": 22.58,
+  "reconfig": 299.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.08.STATIC": {
+  "success": 0.222,
+  "ci": [
+   0.194,
+   0.25
+  ],
+  "cvar": 47.73,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.08.PROPORTIONAL": {
+  "success": 0.36,
+  "ci": [
+   0.322,
+   0.402
+  ],
+  "cvar": 44.95,
+  "reconfig": 3825.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.08.MISSION_AWARE": {
+  "success": 0.678,
+  "ci": [
+   0.636,
+   0.72
+  ],
+  "cvar": 27.2,
+  "reconfig": 1807.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.08.MYOPIC_OPT": {
+  "success": 0.672,
+  "ci": [
+   0.63,
+   0.712
+  ],
+  "cvar": 27.42,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.08.MARS_V0": {
+  "success": 0.71,
+  "ci": [
+   0.674,
+   0.746
+  ],
+  "cvar": 26.21,
+  "reconfig": 1338.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.08.MARS": {
+  "success": 0.708,
+  "ci": [
+   0.672,
+   0.744
+  ],
+  "cvar": 26.82,
+  "reconfig": 302.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.15.STATIC": {
+  "success": 0.124,
+  "ci": [
+   0.104,
+   0.144
+  ],
+  "cvar": 47.73,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.15.PROPORTIONAL": {
+  "success": 0.152,
+  "ci": [
+   0.122,
+   0.18
+  ],
+  "cvar": 47.9,
+  "reconfig": 3826.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.15.MISSION_AWARE": {
+  "success": 0.498,
+  "ci": [
+   0.452,
+   0.544
+  ],
+  "cvar": 31.22,
+  "reconfig": 1830.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.15.MYOPIC_OPT": {
+  "success": 0.502,
+  "ci": [
+   0.456,
+   0.546
+  ],
+  "cvar": 31.38,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.15.MARS_V0": {
+  "success": 0.556,
+  "ci": [
+   0.51,
+   0.598
+  ],
+  "cvar": 30.23,
+  "reconfig": 1405.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.15.MARS": {
+  "success": 0.52,
+  "ci": [
+   0.476,
+   0.564
+  ],
+  "cvar": 32.26,
+  "reconfig": 304.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.3.STATIC": {
+  "success": 0.068,
+  "ci": [
+   0.05,
+   0.086
+  ],
+  "cvar": 47.73,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.3.PROPORTIONAL": {
+  "success": 0.062,
+  "ci": [
+   0.044,
+   0.082
+  ],
+  "cvar": 47.73,
+  "reconfig": 3813.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.3.MISSION_AWARE": {
+  "success": 0.254,
+  "ci": [
+   0.216,
+   0.296
+  ],
+  "cvar": 34.08,
+  "reconfig": 1871.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.3.MYOPIC_OPT": {
+  "success": 0.24,
+  "ci": [
+   0.2,
+   0.28
+  ],
+  "cvar": 34.08,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.3.MARS_V0": {
+  "success": 0.276,
+  "ci": [
+   0.24,
+   0.316
+  ],
+  "cvar": 34.08,
+  "reconfig": 1344.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.shock_probability.0.3.MARS": {
+  "success": 0.258,
+  "ci": [
+   0.216,
+   0.298
+  ],
+  "cvar": 34.08,
+  "reconfig": 307.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.5.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 49.48,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.5.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 49.48,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.5.MISSION_AWARE": {
+  "success": 0.18,
+  "ci": [
+   0.168,
+   0.19
+  ],
+  "cvar": 47.73,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.5.MYOPIC_OPT": {
+  "success": 0.18,
+  "ci": [
+   0.168,
+   0.19
+  ],
+  "cvar": 47.73,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.5.MARS_V0": {
+  "success": 0.19,
+  "ci": [
+   0.18,
+   0.198
+  ],
+  "cvar": 46.53,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.5.MARS": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 49.48,
+  "reconfig": 425.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.6.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 49.48,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.6.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 49.48,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.6.MISSION_AWARE": {
+  "success": 0.34,
+  "ci": [
+   0.316,
+   0.366
+  ],
+  "cvar": 45.53,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.6.MYOPIC_OPT": {
+  "success": 0.34,
+  "ci": [
+   0.316,
+   0.366
+  ],
+  "cvar": 45.8,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.6.MARS_V0": {
+  "success": 0.192,
+  "ci": [
+   0.184,
+   0.198
+  ],
+  "cvar": 46.08,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.6.MARS": {
+  "success": 0.19,
+  "ci": [
+   0.18,
+   0.198
+  ],
+  "cvar": 46.35,
+  "reconfig": 386.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.7.STATIC": {
+  "success": 0.16,
+  "ci": [
+   0.144,
+   0.174
+  ],
+  "cvar": 49.48,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.7.PROPORTIONAL": {
+  "success": 0.002,
+  "ci": [
+   0.0,
+   0.006
+  ],
+  "cvar": 49.48,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.7.MISSION_AWARE": {
+  "success": 0.712,
+  "ci": [
+   0.684,
+   0.738
+  ],
+  "cvar": 27.36,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.7.MYOPIC_OPT": {
+  "success": 0.712,
+  "ci": [
+   0.686,
+   0.736
+  ],
+  "cvar": 26.7,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.7.MARS_V0": {
+  "success": 0.704,
+  "ci": [
+   0.678,
+   0.728
+  ],
+  "cvar": 28.15,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.7.MARS": {
+  "success": 0.558,
+  "ci": [
+   0.54,
+   0.574
+  ],
+  "cvar": 31.89,
+  "reconfig": 334.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.8.STATIC": {
+  "success": 0.186,
+  "ci": [
+   0.174,
+   0.194
+  ],
+  "cvar": 46.9,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.8.PROPORTIONAL": {
+  "success": 0.174,
+  "ci": [
+   0.16,
+   0.186
+  ],
+  "cvar": 49.48,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.8.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.8.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.8.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.8.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.898,
+   0.944
+  ],
+  "cvar": 18.79,
+  "reconfig": 317.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.9.STATIC": {
+  "success": 0.186,
+  "ci": [
+   0.174,
+   0.194
+  ],
+  "cvar": 46.9,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.9.PROPORTIONAL": {
+  "success": 0.21,
+  "ci": [
+   0.196,
+   0.224
+  ],
+  "cvar": 46.08,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.9.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.9.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.9.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.0.9.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 18.24,
+  "reconfig": 309.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.0.STATIC": {
+  "success": 0.374,
+  "ci": [
+   0.36,
+   0.386
+  ],
+  "cvar": 36.18,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.0.PROPORTIONAL": {
+  "success": 0.722,
+  "ci": [
+   0.7,
+   0.744
+  ],
+  "cvar": 23.98,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.0.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.0.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.0.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.0.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.2.STATIC": {
+  "success": 0.732,
+  "ci": [
+   0.71,
+   0.752
+  ],
+  "cvar": 22.31,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.2.PROPORTIONAL": {
+  "success": 0.73,
+  "ci": [
+   0.708,
+   0.75
+  ],
+  "cvar": 23.24,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.2.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.2.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.2.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.2.MARS": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.78,
+  "reconfig": 281.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.5.STATIC": {
+  "success": 0.732,
+  "ci": [
+   0.71,
+   0.752
+  ],
+  "cvar": 22.31,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.5.PROPORTIONAL": {
+  "success": 0.73,
+  "ci": [
+   0.708,
+   0.75
+  ],
+  "cvar": 23.24,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.5.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.5.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.5.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.deadline_scale.1.5.MARS": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.89,
+  "reconfig": 279.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.25.STATIC": {
+  "success": 0.926,
+  "ci": [
+   0.9,
+   0.95
+  ],
+  "cvar": 18.35,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.25.PROPORTIONAL": {
+  "success": 0.922,
+  "ci": [
+   0.9,
+   0.944
+  ],
+  "cvar": 18.35,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.25.MISSION_AWARE": {
+  "success": 0.92,
+  "ci": [
+   0.896,
+   0.94
+  ],
+  "cvar": 16.64,
+  "reconfig": 1130.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.25.MYOPIC_OPT": {
+  "success": 0.918,
+  "ci": [
+   0.896,
+   0.938
+  ],
+  "cvar": 17.25,
+  "reconfig": 298.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.25.MARS_V0": {
+  "success": 0.908,
+  "ci": [
+   0.88,
+   0.934
+  ],
+  "cvar": 19.72,
+  "reconfig": 898.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.25.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.898,
+   0.946
+  ],
+  "cvar": 18.18,
+  "reconfig": 279.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.5.STATIC": {
+  "success": 0.888,
+  "ci": [
+   0.862,
+   0.912
+  ],
+  "cvar": 19.12,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.5.PROPORTIONAL": {
+  "success": 0.812,
+  "ci": [
+   0.784,
+   0.84
+  ],
+  "cvar": 23.13,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.5.MISSION_AWARE": {
+  "success": 0.934,
+  "ci": [
+   0.912,
+   0.956
+  ],
+  "cvar": 17.63,
+  "reconfig": 1338.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.5.MYOPIC_OPT": {
+  "success": 0.936,
+  "ci": [
+   0.914,
+   0.958
+  ],
+  "cvar": 17.52,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.5.MARS_V0": {
+  "success": 0.914,
+  "ci": [
+   0.89,
+   0.938
+  ],
+  "cvar": 18.84,
+  "reconfig": 990.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.5.MARS": {
+  "success": 0.92,
+  "ci": [
+   0.896,
+   0.942
+  ],
+  "cvar": 17.74,
+  "reconfig": 280.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.75.STATIC": {
+  "success": 0.812,
+  "ci": [
+   0.782,
+   0.838
+  ],
+  "cvar": 22.8,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.75.PROPORTIONAL": {
+  "success": 0.736,
+  "ci": [
+   0.714,
+   0.756
+  ],
+  "cvar": 23.3,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.75.MISSION_AWARE": {
+  "success": 0.894,
+  "ci": [
+   0.868,
+   0.92
+  ],
+  "cvar": 20.6,
+  "reconfig": 1538.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.75.MYOPIC_OPT": {
+  "success": 0.9,
+  "ci": [
+   0.872,
+   0.926
+  ],
+  "cvar": 20.6,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.75.MARS_V0": {
+  "success": 0.934,
+  "ci": [
+   0.912,
+   0.956
+  ],
+  "cvar": 17.08,
+  "reconfig": 1069.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.0.75.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.898,
+   0.946
+  ],
+  "cvar": 18.13,
+  "reconfig": 284.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.0.STATIC": {
+  "success": 0.374,
+  "ci": [
+   0.36,
+   0.386
+  ],
+  "cvar": 36.18,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.0.PROPORTIONAL": {
+  "success": 0.722,
+  "ci": [
+   0.7,
+   0.744
+  ],
+  "cvar": 23.98,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.0.MISSION_AWARE": {
+  "success": 0.904,
+  "ci": [
+   0.876,
+   0.93
+  ],
+  "cvar": 20.16,
+  "reconfig": 1755.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.0.MYOPIC_OPT": {
+  "success": 0.902,
+  "ci": [
+   0.874,
+   0.928
+  ],
+  "cvar": 19.83,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.0.MARS_V0": {
+  "success": 0.946,
+  "ci": [
+   0.924,
+   0.964
+  ],
+  "cvar": 17.63,
+  "reconfig": 1070.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.0.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.25.STATIC": {
+  "success": 0.19,
+  "ci": [
+   0.18,
+   0.198
+  ],
+  "cvar": 46.35,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.25.PROPORTIONAL": {
+  "success": 0.166,
+  "ci": [
+   0.15,
+   0.18
+  ],
+  "cvar": 49.48,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.25.MISSION_AWARE": {
+  "success": 0.914,
+  "ci": [
+   0.892,
+   0.936
+  ],
+  "cvar": 18.51,
+  "reconfig": 1958.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.25.MYOPIC_OPT": {
+  "success": 0.91,
+  "ci": [
+   0.888,
+   0.934
+  ],
+  "cvar": 18.9,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.25.MARS_V0": {
+  "success": 0.896,
+  "ci": [
+   0.868,
+   0.92
+  ],
+  "cvar": 19.23,
+  "reconfig": 1063.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.25.MARS": {
+  "success": 0.87,
+  "ci": [
+   0.84,
+   0.896
+  ],
+  "cvar": 21.1,
+  "reconfig": 314.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.5.STATIC": {
+  "success": 0.148,
+  "ci": [
+   0.13,
+   0.164
+  ],
+  "cvar": 49.48,
+  "reconfig": 14.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.5.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 49.48,
+  "reconfig": 3809.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.5.MISSION_AWARE": {
+  "success": 0.626,
+  "ci": [
+   0.594,
+   0.658
+  ],
+  "cvar": 32.33,
+  "reconfig": 2160.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.5.MYOPIC_OPT": {
+  "success": 0.62,
+  "ci": [
+   0.584,
+   0.654
+  ],
+  "cvar": 33.7,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.5.MARS_V0": {
+  "success": 0.466,
+  "ci": [
+   0.44,
+   0.49
+  ],
+  "cvar": 34.52,
+  "reconfig": 1068.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.1.5.MARS": {
+  "success": 0.356,
+  "ci": [
+   0.33,
+   0.384
+  ],
+  "cvar": 44.98,
+  "reconfig": 363.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.2.0.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 51.58,
+  "reconfig": 14.0,
+  "tasks_obs": 3.0
+ },
+ "sweep.workload_scale.2.0.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 51.58,
+  "reconfig": 3809.0,
+  "tasks_obs": 3.0
+ },
+ "sweep.workload_scale.2.0.MISSION_AWARE": {
+  "success": 0.186,
+  "ci": [
+   0.176,
+   0.194
+  ],
+  "cvar": 46.9,
+  "reconfig": 2601.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.2.0.MYOPIC_OPT": {
+  "success": 0.186,
+  "ci": [
+   0.176,
+   0.194
+  ],
+  "cvar": 46.9,
+  "reconfig": 310.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.2.0.MARS_V0": {
+  "success": 0.186,
+  "ci": [
+   0.174,
+   0.194
+  ],
+  "cvar": 46.9,
+  "reconfig": 1061.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.2.0.MARS": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 49.48,
+  "reconfig": 537.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.workload_scale.3.0.STATIC": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 52.58,
+  "reconfig": 14.0,
+  "tasks_obs": 2.0
+ },
+ "sweep.workload_scale.3.0.PROPORTIONAL": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 52.58,
+  "reconfig": 3809.0,
+  "tasks_obs": 2.0
+ },
+ "sweep.workload_scale.3.0.MISSION_AWARE": {
+  "success": 0.192,
+  "ci": [
+   0.184,
+   0.198
+  ],
+  "cvar": 48.35,
+  "reconfig": 3171.3,
+  "tasks_obs": 3.0
+ },
+ "sweep.workload_scale.3.0.MYOPIC_OPT": {
+  "success": 0.192,
+  "ci": [
+   0.184,
+   0.198
+  ],
+  "cvar": 48.35,
+  "reconfig": 260.0,
+  "tasks_obs": 3.0
+ },
+ "sweep.workload_scale.3.0.MARS_V0": {
+  "success": 0.152,
+  "ci": [
+   0.134,
+   0.168
+  ],
+  "cvar": 51.58,
+  "reconfig": 996.2,
+  "tasks_obs": 3.0
+ },
+ "sweep.workload_scale.3.0.MARS": {
+  "success": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "cvar": 51.58,
+  "reconfig": 429.7,
+  "tasks_obs": 3.0
+ },
+ "grid.sev0.2.B60.STATIC": 0.0,
+ "grid.sev0.2.B60.PROPORTIONAL": 0.006,
+ "grid.sev0.2.B60.MISSION_AWARE": 0.754,
+ "grid.sev0.2.B60.MYOPIC_OPT": 0.754,
+ "grid.sev0.2.B60.MARS_V0": 0.748,
+ "grid.sev0.2.B60.MARS": 0.538,
+ "grid.sev0.4.B60.STATIC": 0.0,
+ "grid.sev0.4.B60.PROPORTIONAL": 0.0,
+ "grid.sev0.4.B60.MISSION_AWARE": 0.594,
+ "grid.sev0.4.B60.MYOPIC_OPT": 0.594,
+ "grid.sev0.4.B60.MARS_V0": 0.596,
+ "grid.sev0.4.B60.MARS": 0.144,
+ "grid.sev0.6.B60.STATIC": 0.0,
+ "grid.sev0.6.B60.PROPORTIONAL": 0.0,
+ "grid.sev0.6.B60.MISSION_AWARE": 0.332,
+ "grid.sev0.6.B60.MYOPIC_OPT": 0.332,
+ "grid.sev0.6.B60.MARS_V0": 0.328,
+ "grid.sev0.6.B60.MARS": 0.0,
+ "grid.sev0.8.B60.STATIC": 0.0,
+ "grid.sev0.8.B60.PROPORTIONAL": 0.0,
+ "grid.sev0.8.B60.MISSION_AWARE": 0.096,
+ "grid.sev0.8.B60.MYOPIC_OPT": 0.096,
+ "grid.sev0.8.B60.MARS_V0": 0.106,
+ "grid.sev0.8.B60.MARS": 0.0,
+ "grid.sev1.0.B60.STATIC": 0.0,
+ "grid.sev1.0.B60.PROPORTIONAL": 0.0,
+ "grid.sev1.0.B60.MISSION_AWARE": 0.0,
+ "grid.sev1.0.B60.MYOPIC_OPT": 0.0,
+ "grid.sev1.0.B60.MARS_V0": 0.0,
+ "grid.sev1.0.B60.MARS": 0.0,
+ "grid.sev0.2.B80.STATIC": 0.378,
+ "grid.sev0.2.B80.PROPORTIONAL": 0.6,
+ "grid.sev0.2.B80.MISSION_AWARE": 0.926,
+ "grid.sev0.2.B80.MYOPIC_OPT": 0.926,
+ "grid.sev0.2.B80.MARS_V0": 0.934,
+ "grid.sev0.2.B80.MARS": 0.918,
+ "grid.sev0.4.B80.STATIC": 0.256,
+ "grid.sev0.4.B80.PROPORTIONAL": 0.252,
+ "grid.sev0.4.B80.MISSION_AWARE": 0.728,
+ "grid.sev0.4.B80.MYOPIC_OPT": 0.73,
+ "grid.sev0.4.B80.MARS_V0": 0.734,
+ "grid.sev0.4.B80.MARS": 0.724,
+ "grid.sev0.6.B80.STATIC": 0.178,
+ "grid.sev0.6.B80.PROPORTIONAL": 0.156,
+ "grid.sev0.6.B80.MISSION_AWARE": 0.71,
+ "grid.sev0.6.B80.MYOPIC_OPT": 0.71,
+ "grid.sev0.6.B80.MARS_V0": 0.722,
+ "grid.sev0.6.B80.MARS": 0.606,
+ "grid.sev0.8.B80.STATIC": 0.022,
+ "grid.sev0.8.B80.PROPORTIONAL": 0.0,
+ "grid.sev0.8.B80.MISSION_AWARE": 0.382,
+ "grid.sev0.8.B80.MYOPIC_OPT": 0.382,
+ "grid.sev0.8.B80.MARS_V0": 0.366,
+ "grid.sev0.8.B80.MARS": 0.3,
+ "grid.sev1.0.B80.STATIC": 0.0,
+ "grid.sev1.0.B80.PROPORTIONAL": 0.0,
+ "grid.sev1.0.B80.MISSION_AWARE": 0.29,
+ "grid.sev1.0.B80.MYOPIC_OPT": 0.29,
+ "grid.sev1.0.B80.MARS_V0": 0.286,
+ "grid.sev1.0.B80.MARS": 0.182,
+ "grid.sev0.2.B100.STATIC": 0.374,
+ "grid.sev0.2.B100.PROPORTIONAL": 0.722,
+ "grid.sev0.2.B100.MISSION_AWARE": 0.904,
+ "grid.sev0.2.B100.MYOPIC_OPT": 0.902,
+ "grid.sev0.2.B100.MARS_V0": 0.946,
+ "grid.sev0.2.B100.MARS": 0.928,
+ "grid.sev0.4.B100.STATIC": 0.29,
+ "grid.sev0.4.B100.PROPORTIONAL": 0.384,
+ "grid.sev0.4.B100.MISSION_AWARE": 0.742,
+ "grid.sev0.4.B100.MYOPIC_OPT": 0.742,
+ "grid.sev0.4.B100.MARS_V0": 0.726,
+ "grid.sev0.4.B100.MARS": 0.736,
+ "grid.sev0.6.B100.STATIC": 0.178,
+ "grid.sev0.6.B100.PROPORTIONAL": 0.184,
+ "grid.sev0.6.B100.MISSION_AWARE": 0.7,
+ "grid.sev0.6.B100.MYOPIC_OPT": 0.7,
+ "grid.sev0.6.B100.MARS_V0": 0.71,
+ "grid.sev0.6.B100.MARS": 0.692,
+ "grid.sev0.8.B100.STATIC": 0.092,
+ "grid.sev0.8.B100.PROPORTIONAL": 0.072,
+ "grid.sev0.8.B100.MISSION_AWARE": 0.376,
+ "grid.sev0.8.B100.MYOPIC_OPT": 0.376,
+ "grid.sev0.8.B100.MARS_V0": 0.36,
+ "grid.sev0.8.B100.MARS": 0.352,
+ "grid.sev1.0.B100.STATIC": 0.0,
+ "grid.sev1.0.B100.PROPORTIONAL": 0.0,
+ "grid.sev1.0.B100.MISSION_AWARE": 0.368,
+ "grid.sev1.0.B100.MYOPIC_OPT": 0.368,
+ "grid.sev1.0.B100.MARS_V0": 0.358,
+ "grid.sev1.0.B100.MARS": 0.152,
+ "grid.sev0.2.B120.STATIC": 0.412,
+ "grid.sev0.2.B120.PROPORTIONAL": 0.706,
+ "grid.sev0.2.B120.MISSION_AWARE": 0.934,
+ "grid.sev0.2.B120.MYOPIC_OPT": 0.94,
+ "grid.sev0.2.B120.MARS_V0": 0.918,
+ "grid.sev0.2.B120.MARS": 0.908,
+ "grid.sev0.4.B120.STATIC": 0.246,
+ "grid.sev0.4.B120.PROPORTIONAL": 0.352,
+ "grid.sev0.4.B120.MISSION_AWARE": 0.732,
+ "grid.sev0.4.B120.MYOPIC_OPT": 0.726,
+ "grid.sev0.4.B120.MARS_V0": 0.722,
+ "grid.sev0.4.B120.MARS": 0.724,
+ "grid.sev0.6.B120.STATIC": 0.178,
+ "grid.sev0.6.B120.PROPORTIONAL": 0.184,
+ "grid.sev0.6.B120.MISSION_AWARE": 0.692,
+ "grid.sev0.6.B120.MYOPIC_OPT": 0.68,
+ "grid.sev0.6.B120.MARS_V0": 0.626,
+ "grid.sev0.6.B120.MARS": 0.546,
+ "grid.sev0.8.B120.STATIC": 0.174,
+ "grid.sev0.8.B120.PROPORTIONAL": 0.182,
+ "grid.sev0.8.B120.MISSION_AWARE": 0.216,
+ "grid.sev0.8.B120.MYOPIC_OPT": 0.216,
+ "grid.sev0.8.B120.MARS_V0": 0.182,
+ "grid.sev0.8.B120.MARS": 0.176,
+ "grid.sev1.0.B120.STATIC": 0.0,
+ "grid.sev1.0.B120.PROPORTIONAL": 0.0,
+ "grid.sev1.0.B120.MISSION_AWARE": 0.178,
+ "grid.sev1.0.B120.MYOPIC_OPT": 0.178,
+ "grid.sev1.0.B120.MARS_V0": 0.182,
+ "grid.sev1.0.B120.MARS": 0.052,
+ "sweep.mars_temperature_A_benign.0.05.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.896,
+   0.946
+  ],
+  "cvar": 19.23,
+  "reconfig": 903.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_A_benign.0.1.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.896,
+   0.946
+  ],
+  "cvar": 19.23,
+  "reconfig": 762.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_A_benign.0.2.MARS": {
+  "success": 0.918,
+  "ci": [
+   0.892,
+   0.942
+  ],
+  "cvar": 19.23,
+  "reconfig": 670.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_A_benign.0.4.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.898,
+   0.946
+  ],
+  "cvar": 19.12,
+  "reconfig": 553.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_A_benign.0.8.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_A_benign.1.6.MARS": {
+  "success": 0.862,
+  "ci": [
+   0.83,
+   0.888
+  ],
+  "cvar": 21.87,
+  "reconfig": 131.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_B_severe.0.05.MARS": {
+  "success": 0.692,
+  "ci": [
+   0.664,
+   0.716
+  ],
+  "cvar": 25.88,
+  "reconfig": 869.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_B_severe.0.1.MARS": {
+  "success": 0.694,
+  "ci": [
+   0.666,
+   0.718
+  ],
+  "cvar": 25.61,
+  "reconfig": 748.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_B_severe.0.2.MARS": {
+  "success": 0.694,
+  "ci": [
+   0.668,
+   0.718
+  ],
+  "cvar": 25.39,
+  "reconfig": 674.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_B_severe.0.4.MARS": {
+  "success": 0.708,
+  "ci": [
+   0.68,
+   0.734
+  ],
+  "cvar": 25.39,
+  "reconfig": 566.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_B_severe.0.8.MARS": {
+  "success": 0.692,
+  "ci": [
+   0.67,
+   0.716
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_B_severe.1.6.MARS": {
+  "success": 0.312,
+  "ci": [
+   0.282,
+   0.338
+  ],
+  "cvar": 36.37,
+  "reconfig": 141.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_C_concurrent.0.05.MARS": {
+  "success": 0.906,
+  "ci": [
+   0.882,
+   0.928
+  ],
+  "cvar": 18.4,
+  "reconfig": 866.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_C_concurrent.0.1.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.946
+  ],
+  "cvar": 18.68,
+  "reconfig": 677.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_C_concurrent.0.2.MARS": {
+  "success": 0.936,
+  "ci": [
+   0.916,
+   0.952
+  ],
+  "cvar": 16.04,
+  "reconfig": 551.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_C_concurrent.0.4.MARS": {
+  "success": 0.94,
+  "ci": [
+   0.918,
+   0.96
+  ],
+  "cvar": 16.92,
+  "reconfig": 437.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_C_concurrent.0.8.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.95
+  ],
+  "cvar": 19.34,
+  "reconfig": 241.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_temperature_C_concurrent.1.6.MARS": {
+  "success": 0.822,
+  "ci": [
+   0.784,
+   0.856
+  ],
+  "cvar": 26.54,
+  "reconfig": 110.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_A_benign.0.0.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_A_benign.0.1.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 18.84,
+  "reconfig": 303.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_A_benign.0.2.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.948
+  ],
+  "cvar": 18.57,
+  "reconfig": 307.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_A_benign.0.4.MARS": {
+  "success": 0.912,
+  "ci": [
+   0.884,
+   0.936
+  ],
+  "cvar": 20.16,
+  "reconfig": 317.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_A_benign.0.8.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.948
+  ],
+  "cvar": 18.24,
+  "reconfig": 337.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_B_severe.0.0.MARS": {
+  "success": 0.692,
+  "ci": [
+   0.67,
+   0.716
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_B_severe.0.1.MARS": {
+  "success": 0.704,
+  "ci": [
+   0.68,
+   0.726
+  ],
+  "cvar": 23.96,
+  "reconfig": 331.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_B_severe.0.2.MARS": {
+  "success": 0.7,
+  "ci": [
+   0.674,
+   0.726
+  ],
+  "cvar": 25.55,
+  "reconfig": 339.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_B_severe.0.4.MARS": {
+  "success": 0.678,
+  "ci": [
+   0.65,
+   0.706
+  ],
+  "cvar": 26.65,
+  "reconfig": 366.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_B_severe.0.8.MARS": {
+  "success": 0.562,
+  "ci": [
+   0.528,
+   0.594
+  ],
+  "cvar": 31.91,
+  "reconfig": 399.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_C_concurrent.0.0.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.95
+  ],
+  "cvar": 19.34,
+  "reconfig": 241.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_C_concurrent.0.1.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.898,
+   0.946
+  ],
+  "cvar": 19.17,
+  "reconfig": 248.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_C_concurrent.0.2.MARS": {
+  "success": 0.918,
+  "ci": [
+   0.896,
+   0.942
+  ],
+  "cvar": 18.79,
+  "reconfig": 252.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_C_concurrent.0.4.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.896,
+   0.946
+  ],
+  "cvar": 19.34,
+  "reconfig": 261.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_reserve_scale_C_concurrent.0.8.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.908,
+   0.95
+  ],
+  "cvar": 17.91,
+  "reconfig": 284.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_A_benign.0.0.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.952
+  ],
+  "cvar": 18.46,
+  "reconfig": 316.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_A_benign.0.25.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_A_benign.0.5.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.952
+  ],
+  "cvar": 18.07,
+  "reconfig": 258.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_A_benign.0.75.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 17.52,
+  "reconfig": 234.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_A_benign.0.9.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 17.52,
+  "reconfig": 233.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_B_severe.0.0.MARS": {
+  "success": 0.69,
+  "ci": [
+   0.664,
+   0.716
+  ],
+  "cvar": 25.22,
+  "reconfig": 343.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_B_severe.0.25.MARS": {
+  "success": 0.692,
+  "ci": [
+   0.67,
+   0.716
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_B_severe.0.5.MARS": {
+  "success": 0.688,
+  "ci": [
+   0.664,
+   0.712
+  ],
+  "cvar": 25.0,
+  "reconfig": 277.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_B_severe.0.75.MARS": {
+  "success": 0.688,
+  "ci": [
+   0.662,
+   0.712
+  ],
+  "cvar": 25.33,
+  "reconfig": 259.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_B_severe.0.9.MARS": {
+  "success": 0.69,
+  "ci": [
+   0.666,
+   0.714
+  ],
+  "cvar": 25.06,
+  "reconfig": 254.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_C_concurrent.0.0.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.898,
+   0.948
+  ],
+  "cvar": 19.83,
+  "reconfig": 258.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_C_concurrent.0.25.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.95
+  ],
+  "cvar": 19.34,
+  "reconfig": 241.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_C_concurrent.0.5.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.34,
+  "reconfig": 199.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_C_concurrent.0.75.MARS": {
+  "success": 0.918,
+  "ci": [
+   0.894,
+   0.942
+  ],
+  "cvar": 19.34,
+  "reconfig": 181.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_damping_C_concurrent.0.9.MARS": {
+  "success": 0.918,
+  "ci": [
+   0.894,
+   0.942
+  ],
+  "cvar": 19.34,
+  "reconfig": 181.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.0.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 18.07,
+  "reconfig": 502.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.1.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 18.07,
+  "reconfig": 502.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.2.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 18.07,
+  "reconfig": 418.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.4.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.95
+  ],
+  "cvar": 18.07,
+  "reconfig": 347.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.6.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.07,
+  "reconfig": 316.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.8.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.12.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.952
+  ],
+  "cvar": 18.07,
+  "reconfig": 278.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_A_benign.20.MARS": {
+  "success": 0.93,
+  "ci": [
+   0.906,
+   0.952
+  ],
+  "cvar": 18.62,
+  "reconfig": 257.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.0.MARS": {
+  "success": 0.684,
+  "ci": [
+   0.658,
+   0.71
+  ],
+  "cvar": 25.99,
+  "reconfig": 567.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.1.MARS": {
+  "success": 0.684,
+  "ci": [
+   0.658,
+   0.71
+  ],
+  "cvar": 25.99,
+  "reconfig": 567.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.2.MARS": {
+  "success": 0.682,
+  "ci": [
+   0.654,
+   0.708
+  ],
+  "cvar": 25.99,
+  "reconfig": 459.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.4.MARS": {
+  "success": 0.684,
+  "ci": [
+   0.658,
+   0.71
+  ],
+  "cvar": 25.99,
+  "reconfig": 377.8,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.6.MARS": {
+  "success": 0.688,
+  "ci": [
+   0.662,
+   0.712
+  ],
+  "cvar": 25.44,
+  "reconfig": 343.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.8.MARS": {
+  "success": 0.692,
+  "ci": [
+   0.67,
+   0.716
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.12.MARS": {
+  "success": 0.684,
+  "ci": [
+   0.66,
+   0.708
+  ],
+  "cvar": 25.0,
+  "reconfig": 305.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_B_severe.20.MARS": {
+  "success": 0.686,
+  "ci": [
+   0.66,
+   0.712
+  ],
+  "cvar": 25.55,
+  "reconfig": 278.9,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.0.MARS": {
+  "success": 0.92,
+  "ci": [
+   0.896,
+   0.944
+  ],
+  "cvar": 19.72,
+  "reconfig": 423.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.1.MARS": {
+  "success": 0.92,
+  "ci": [
+   0.896,
+   0.944
+  ],
+  "cvar": 19.72,
+  "reconfig": 423.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.2.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.34,
+  "reconfig": 349.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.4.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.34,
+  "reconfig": 286.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.6.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.34,
+  "reconfig": 258.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.8.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.95
+  ],
+  "cvar": 19.34,
+  "reconfig": 241.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.12.MARS": {
+  "success": 0.914,
+  "ci": [
+   0.89,
+   0.938
+  ],
+  "cvar": 19.34,
+  "reconfig": 222.3,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_hold_time_s_C_concurrent.20.MARS": {
+  "success": 0.918,
+  "ci": [
+   0.894,
+   0.942
+  ],
+  "cvar": 19.34,
+  "reconfig": 206.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_A_benign.2.MARS": {
+  "success": 0.906,
+  "ci": [
+   0.88,
+   0.93
+  ],
+  "cvar": 18.9,
+  "reconfig": 358.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_A_benign.4.MARS": {
+  "success": 0.912,
+  "ci": [
+   0.886,
+   0.936
+  ],
+  "cvar": 19.01,
+  "reconfig": 331.0,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_A_benign.8.MARS": {
+  "success": 0.918,
+  "ci": [
+   0.892,
+   0.94
+  ],
+  "cvar": 18.4,
+  "reconfig": 306.7,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_A_benign.16.MARS": {
+  "success": 0.928,
+  "ci": [
+   0.904,
+   0.95
+  ],
+  "cvar": 18.18,
+  "reconfig": 298.1,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_A_benign.32.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.5,
+  "reconfig": 296.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_A_benign.64.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.5,
+  "reconfig": 296.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_B_severe.2.MARS": {
+  "success": 0.652,
+  "ci": [
+   0.622,
+   0.682
+  ],
+  "cvar": 27.31,
+  "reconfig": 369.4,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_B_severe.4.MARS": {
+  "success": 0.686,
+  "ci": [
+   0.66,
+   0.712
+  ],
+  "cvar": 25.17,
+  "reconfig": 350.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_B_severe.8.MARS": {
+  "success": 0.672,
+  "ci": [
+   0.642,
+   0.7
+  ],
+  "cvar": 26.6,
+  "reconfig": 333.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_B_severe.16.MARS": {
+  "success": 0.692,
+  "ci": [
+   0.67,
+   0.716
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_B_severe.32.MARS": {
+  "success": 0.698,
+  "ci": [
+   0.674,
+   0.722
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_B_severe.64.MARS": {
+  "success": 0.698,
+  "ci": [
+   0.674,
+   0.722
+  ],
+  "cvar": 24.51,
+  "reconfig": 324.2,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_C_concurrent.2.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.898,
+   0.946
+  ],
+  "cvar": 18.46,
+  "reconfig": 270.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_C_concurrent.4.MARS": {
+  "success": 0.922,
+  "ci": [
+   0.902,
+   0.944
+  ],
+  "cvar": 18.35,
+  "reconfig": 261.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_C_concurrent.8.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.28,
+  "reconfig": 244.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_C_concurrent.16.MARS": {
+  "success": 0.926,
+  "ci": [
+   0.902,
+   0.95
+  ],
+  "cvar": 19.34,
+  "reconfig": 241.6,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_C_concurrent.32.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.34,
+  "reconfig": 240.5,
+  "tasks_obs": 5.0
+ },
+ "sweep.mars_max_reconfig_per_step_C_concurrent.64.MARS": {
+  "success": 0.924,
+  "ci": [
+   0.9,
+   0.948
+  ],
+  "cvar": 19.34,
+  "reconfig": 240.5,
+  "tasks_obs": 5.0
+ },
+ "ablation.A_benign.MARS (full)": {
+  "success": 0.909,
+  "ci": [
+   0.894,
+   0.923
+  ],
+  "reconfig_mission": 216.5,
+  "reconfig_total": 298.2,
+  "loss": 12.081,
+  "cvar": 18.968
+ },
+ "ablation.A_benign.no criticality terms": {
+  "success": 0.92,
+  "ci": [
+   0.906,
+   0.933
+  ],
+  "reconfig_mission": 294.7,
+  "reconfig_total": 390.9,
+  "loss": 11.831,
+  "cvar": 18.748
+ },
+ "ablation.A_benign.saturated softmax (tau=0.05)": {
+  "success": 0.913,
+  "ci": [
+   0.898,
+   0.927
+  ],
+  "reconfig_mission": 514.6,
+  "reconfig_total": 907.5,
+  "loss": 12.137,
+  "cvar": 18.84
+ },
+ "ablation.A_benign.with risk reserve (R0=0.2)": {
+  "success": 0.905,
+  "ci": [
+   0.889,
+   0.919
+  ],
+  "reconfig_mission": 222.6,
+  "reconfig_total": 307.4,
+  "loss": 12.209,
+  "cvar": 19.793
+ },
+ "ablation.A_benign.no damping": {
+  "success": 0.912,
+  "ci": [
+   0.897,
+   0.926
+  ],
+  "reconfig_mission": 225.7,
+  "reconfig_total": 317.4,
+  "loss": 11.974,
+  "cvar": 18.785
+ },
+ "ablation.A_benign.no hold time": {
+  "success": 0.911,
+  "ci": [
+   0.897,
+   0.925
+  ],
+  "reconfig_mission": 307.4,
+  "reconfig_total": 503.6,
+  "loss": 12.0,
+  "cvar": 18.95
+ },
+ "ablation.A_benign.fixed hold (no slack/release)": {
+  "success": 0.887,
+  "ci": [
+   0.872,
+   0.903
+  ],
+  "reconfig_mission": 198.7,
+  "reconfig_total": 271.4,
+  "loss": 12.728,
+  "cvar": 20.197
+ },
+ "ablation.A_benign.no damping + no hold": {
+  "success": 0.911,
+  "ci": [
+   0.896,
+   0.924
+  ],
+  "reconfig_mission": 405.6,
+  "reconfig_total": 742.5,
+  "loss": 12.022,
+  "cvar": 19.042
+ },
+ "ablation.A_benign.MARS-v0 (full)": {
+  "success": 0.924,
+  "ci": [
+   0.909,
+   0.937
+  ],
+  "reconfig_mission": 575.0,
+  "reconfig_total": 1073.5,
+  "loss": 11.782,
+  "cvar": 18.748
+ },
+ "ablation.A_benign.v0: no reserve": {
+  "success": 0.915,
+  "ci": [
+   0.901,
+   0.929
+  ],
+  "reconfig_mission": 573.8,
+  "reconfig_total": 728.2,
+  "loss": 11.991,
+  "cvar": 18.95
+ },
+ "ablation.A_benign.v0: no penalty": {
+  "success": 0.916,
+  "ci": [
+   0.901,
+   0.93
+  ],
+  "reconfig_mission": 574.0,
+  "reconfig_total": 917.6,
+  "loss": 11.947,
+  "cvar": 19.042
+ },
+ "ablation.A_benign.v0: no reserve + no penalty": {
+  "success": 0.912,
+  "ci": [
+   0.897,
+   0.926
+  ],
+  "reconfig_mission": 571.2,
+  "reconfig_total": 717.2,
+  "loss": 12.049,
+  "cvar": 19.023
+ },
+ "ablation.A_benign.v0: no hold time": {
+  "success": 0.907,
+  "ci": [
+   0.891,
+   0.921
+  ],
+  "reconfig_mission": 1348.7,
+  "reconfig_total": 2734.0,
+  "loss": 12.227,
+  "cvar": 19.592
+ },
+ "ablation.A_benign.env: no edge bonus (MARS)": {
+  "success": 0.904,
+  "ci": [
+   0.887,
+   0.92
+  ],
+  "reconfig_mission": 222.3,
+  "reconfig_total": 303.6,
+  "loss": 12.251,
+  "cvar": 19.94
+ },
+ "ablation.A_benign.env: no edge bonus (MISSION-AWARE)": {
+  "success": 0.917,
+  "ci": [
+   0.901,
+   0.931
+  ],
+  "reconfig_mission": 1434.3,
+  "reconfig_total": 1826.1,
+  "loss": 11.996,
+  "cvar": 19.573
+ },
+ "ablation.B_severe.MARS (full)": {
+  "success": 0.667,
+  "ci": [
+   0.651,
+   0.683
+  ],
+  "reconfig_mission": 242.1,
+  "reconfig_total": 325.0,
+  "loss": 19.577,
+  "cvar": 26.247
+ },
+ "ablation.B_severe.no criticality terms": {
+  "success": 0.689,
+  "ci": [
+   0.674,
+   0.704
+  ],
+  "reconfig_mission": 300.0,
+  "reconfig_total": 391.4,
+  "loss": 19.087,
+  "cvar": 25.0
+ },
+ "ablation.B_severe.saturated softmax (tau=0.05)": {
+  "success": 0.693,
+  "ci": [
+   0.678,
+   0.707
+  ],
+  "reconfig_mission": 522.5,
+  "reconfig_total": 866.9,
+  "loss": 19.021,
+  "cvar": 25.935
+ },
+ "ablation.B_severe.with risk reserve (R0=0.2)": {
+  "success": 0.679,
+  "ci": [
+   0.662,
+   0.694
+  ],
+  "reconfig_mission": 249.2,
+  "reconfig_total": 339.8,
+  "loss": 19.348,
+  "cvar": 26.283
+ },
+ "ablation.B_severe.no damping": {
+  "success": 0.667,
+  "ci": [
+   0.651,
+   0.683
+  ],
+  "reconfig_mission": 254.0,
+  "reconfig_total": 345.6,
+  "loss": 19.577,
+  "cvar": 26.21
+ },
+ "ablation.B_severe.no hold time": {
+  "success": 0.662,
+  "ci": [
+   0.645,
+   0.679
+  ],
+  "reconfig_mission": 399.1,
+  "reconfig_total": 570.2,
+  "loss": 19.735,
+  "cvar": 26.833
+ },
+ "ablation.B_severe.fixed hold (no slack/release)": {
+  "success": 0.635,
+  "ci": [
+   0.618,
+   0.651
+  ],
+  "reconfig_mission": 224.4,
+  "reconfig_total": 300.4,
+  "loss": 20.523,
+  "cvar": 27.31
+ },
+ "ablation.B_severe.no damping + no hold": {
+  "success": 0.665,
+  "ci": [
+   0.649,
+   0.682
+  ],
+  "reconfig_mission": 530.9,
+  "reconfig_total": 826.5,
+  "loss": 19.645,
+  "cvar": 26.742
+ },
+ "ablation.B_severe.MARS-v0 (full)": {
+  "success": 0.692,
+  "ci": [
+   0.677,
+   0.707
+  ],
+  "reconfig_mission": 615.1,
+  "reconfig_total": 940.7,
+  "loss": 19.086,
+  "cvar": 25.88
+ },
+ "ablation.B_severe.v0: no reserve": {
+  "success": 0.687,
+  "ci": [
+   0.671,
+   0.701
+  ],
+  "reconfig_mission": 618.2,
+  "reconfig_total": 763.7,
+  "loss": 19.148,
+  "cvar": 25.917
+ },
+ "ablation.B_severe.v0: no penalty": {
+  "success": 0.688,
+  "ci": [
+   0.671,
+   0.705
+  ],
+  "reconfig_mission": 618.2,
+  "reconfig_total": 763.2,
+  "loss": 19.115,
+  "cvar": 26.485
+ },
+ "ablation.B_severe.v0: no reserve + no penalty": {
+  "success": 0.689,
+  "ci": [
+   0.673,
+   0.706
+  ],
+  "reconfig_mission": 612.8,
+  "reconfig_total": 751.9,
+  "loss": 19.078,
+  "cvar": 26.21
+ },
+ "ablation.B_severe.v0: no hold time": {
+  "success": 0.696,
+  "ci": [
+   0.682,
+   0.71
+  ],
+  "reconfig_mission": 1490.7,
+  "reconfig_total": 2748.6,
+  "loss": 18.935,
+  "cvar": 25.807
+ },
+ "ablation.B_severe.env: no edge bonus (MARS)": {
+  "success": 0.657,
+  "ci": [
+   0.639,
+   0.674
+  ],
+  "reconfig_mission": 251.2,
+  "reconfig_total": 334.6,
+  "loss": 19.894,
+  "cvar": 26.943
+ },
+ "ablation.B_severe.env: no edge bonus (MISSION-AWARE)": {
+  "success": 0.699,
+  "ci": [
+   0.685,
+   0.714
+  ],
+  "reconfig_mission": 1593.0,
+  "reconfig_total": 1926.9,
+  "loss": 18.888,
+  "cvar": 24.413
+ },
+ "ablation.C_concurrent.MARS (full)": {
+  "success": 0.916,
+  "ci": [
+   0.902,
+   0.93
+  ],
+  "reconfig_mission": 157.7,
+  "reconfig_total": 241.0,
+  "loss": 11.996,
+  "cvar": 18.693
+ },
+ "ablation.C_concurrent.no criticality terms": {
+  "success": 0.921,
+  "ci": [
+   0.907,
+   0.933
+  ],
+  "reconfig_mission": 227.1,
+  "reconfig_total": 326.4,
+  "loss": 11.815,
+  "cvar": 17.887
+ },
+ "ablation.C_concurrent.saturated softmax (tau=0.05)": {
+  "success": 0.911,
+  "ci": [
+   0.897,
+   0.925
+  ],
+  "reconfig_mission": 458.3,
+  "reconfig_total": 864.4,
+  "loss": 12.165,
+  "cvar": 18.492
+ },
+ "ablation.C_concurrent.with risk reserve (R0=0.2)": {
+  "success": 0.915,
+  "ci": [
+   0.901,
+   0.929
+  ],
+  "reconfig_mission": 165.8,
+  "reconfig_total": 251.8,
+  "loss": 11.983,
+  "cvar": 19.005
+ },
+ "ablation.C_concurrent.no damping": {
+  "success": 0.914,
+  "ci": [
+   0.899,
+   0.928
+  ],
+  "reconfig_mission": 164.7,
+  "reconfig_total": 259.0,
+  "loss": 12.046,
+  "cvar": 19.078
+ },
+ "ablation.C_concurrent.no hold time": {
+  "success": 0.914,
+  "ci": [
+   0.9,
+   0.929
+  ],
+  "reconfig_mission": 216.1,
+  "reconfig_total": 423.2,
+  "loss": 12.049,
+  "cvar": 19.023
+ },
+ "ablation.C_concurrent.fixed hold (no slack/release)": {
+  "success": 0.905,
+  "ci": [
+   0.889,
+   0.92
+  ],
+  "reconfig_mission": 140.3,
+  "reconfig_total": 215.6,
+  "loss": 12.17,
+  "cvar": 19.573
+ },
+ "ablation.C_concurrent.no damping + no hold": {
+  "success": 0.916,
+  "ci": [
+   0.901,
+   0.931
+  ],
+  "reconfig_mission": 298.0,
+  "reconfig_total": 658.0,
+  "loss": 11.994,
+  "cvar": 19.06
+ },
+ "ablation.C_concurrent.MARS-v0 (full)": {
+  "success": 0.915,
+  "ci": [
+   0.901,
+   0.928
+  ],
+  "reconfig_mission": 515.5,
+  "reconfig_total": 1035.3,
+  "loss": 12.031,
+  "cvar": 19.042
+ },
+ "ablation.C_concurrent.v0: no reserve": {
+  "success": 0.909,
+  "ci": [
+   0.894,
+   0.924
+  ],
+  "reconfig_mission": 518.5,
+  "reconfig_total": 676.7,
+  "loss": 12.149,
+  "cvar": 19.52
+ },
+ "ablation.C_concurrent.v0: no penalty": {
+  "success": 0.902,
+  "ci": [
+   0.887,
+   0.917
+  ],
+  "reconfig_mission": 517.4,
+  "reconfig_total": 873.0,
+  "loss": 12.321,
+  "cvar": 20.16
+ },
+ "ablation.C_concurrent.v0: no reserve + no penalty": {
+  "success": 0.909,
+  "ci": [
+   0.895,
+   0.924
+  ],
+  "reconfig_mission": 518.6,
+  "reconfig_total": 668.1,
+  "loss": 12.146,
+  "cvar": 19.28
+ },
+ "ablation.C_concurrent.v0: no hold time": {
+  "success": 0.916,
+  "ci": [
+   0.902,
+   0.929
+  ],
+  "reconfig_mission": 1242.1,
+  "reconfig_total": 2674.2,
+  "loss": 12.016,
+  "cvar": 18.473
+ },
+ "ablation.C_concurrent.env: no edge bonus (MARS)": {
+  "success": 0.909,
+  "ci": [
+   0.895,
+   0.924
+  ],
+  "reconfig_mission": 161.1,
+  "reconfig_total": 243.7,
+  "loss": 12.053,
+  "cvar": 19.17
+ },
+ "ablation.C_concurrent.env: no edge bonus (MISSION-AWARE)": {
+  "success": 0.911,
+  "ci": [
+   0.896,
+   0.927
+  ],
+  "reconfig_mission": 1326.7,
+  "reconfig_total": 1729.6,
+  "loss": 12.13,
+  "cvar": 19.335
+ },
+ "saturation.A_benign.MARS_V0.min_max_weight_in_mission": 0.9986,
+ "saturation.A_benign.MARS_V0.mean_max_weight_in_mission": 0.9999,
+ "saturation.A_benign.MARS_V0.mission_end": 140,
+ "saturation.A_benign.MARS.min_max_weight_in_mission": 0.3193,
+ "saturation.A_benign.MARS.mean_max_weight_in_mission": 0.4105,
+ "saturation.A_benign.MARS.mission_end": 144,
+ "saturation.C_concurrent.MARS_V0.min_max_weight_in_mission": 0.9528,
+ "saturation.C_concurrent.MARS_V0.mean_max_weight_in_mission": 0.996,
+ "saturation.C_concurrent.MARS_V0.mission_end": 134,
+ "saturation.C_concurrent.MARS.min_max_weight_in_mission": 0.3193,
+ "saturation.C_concurrent.MARS.mean_max_weight_in_mission": 0.395,
+ "saturation.C_concurrent.MARS.mission_end": 129,
+ "seed20.A_benign.STATIC.mission_end": 199,
+ "seed20.A_benign.PROPORTIONAL.mission_end": 192,
+ "seed20.A_benign.MISSION_AWARE.mission_end": 133,
+ "seed20.A_benign.MYOPIC_OPT.mission_end": 133,
+ "seed20.A_benign.MARS_V0.mission_end": 140,
+ "seed20.A_benign.MARS.mission_end": 144,
+ "seed20.C_concurrent.STATIC.mission_end": 172,
+ "seed20.C_concurrent.PROPORTIONAL.mission_end": 161,
+ "seed20.C_concurrent.MISSION_AWARE.mission_end": 126,
+ "seed20.C_concurrent.MYOPIC_OPT.mission_end": 118,
+ "seed20.C_concurrent.MARS_V0.mission_end": 134,
+ "seed20.C_concurrent.MARS.mission_end": 129,
+ "runtime_s": 331.1
+}

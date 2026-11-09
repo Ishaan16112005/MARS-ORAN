@@ -1,0 +1,11 @@
+parameter,value,unit,purpose
+simulation_duration,300,s,simulation horizon
+random_seeds,30,runs,seeds 20-49
+cell_prbs,100,PRBs,radio budget
+edge_compute,100,normalized units,edge capacity
+incident_severity,0.60,0-1,baseline initial hazard
+shock_probability,0.018,probability/step,network shock model
+hold_time,4,s,minimum allocation holding time
+max_reconfiguration,16,PRBs/step,stability limit
+risk_aversion,0.55,0-1,risk reserve scaling
+cvar_beta,0.90,probability,CVaR confidence level

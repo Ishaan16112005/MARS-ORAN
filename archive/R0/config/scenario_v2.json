@@ -1,0 +1,31 @@
+{
+  "project": "MARS-O-RAN",
+  "version": "1.0-research-prototype",
+  "simulation": {"duration_s": 300, "time_step_s": 1, "seed": 17},
+  "radio": {
+    "total_prbs": 100,
+    "prb_bandwidth_hz": 180000,
+    "spectral_efficiency_factor": 0.62,
+    "min_slice_prbs": {"SC": 15, "SV": 15, "SX": 10, "SM": 10},
+    "max_slice_prbs": {"SC": 60, "SV": 60, "SX": 50, "SM": 40},
+    "base_snr_db": {"SC": 18, "SV": 16, "SX": 13, "SM": 12}
+  },
+  "edge": {"total_compute_units": 100, "compute_efficiency": 0.72},
+  "backhaul": {"base_latency_ms": 4.0, "jitter_ms": 1.5},
+  "incident": {"start_time_s": 20, "initial_severity": 0.60, "severity_growth_per_s": 0.0015, "shock_probability": 0.018, "shock_duration_s": 5},
+  "controller": {
+    "alpha_urgency": 0.40,
+    "alpha_hazard": 0.25,
+    "alpha_critical_path": 0.20,
+    "alpha_aoi": 0.10,
+    "alpha_risk": 0.05,
+    "risk_aversion": 0.55,
+    "reconfig_penalty": 0.025,
+    "hold_time_s": 4,
+    "risk_reserve_prbs": 8,
+    "max_reconfig_per_step": 16,
+    "urgency_epsilon_s": 2.0
+  },
+  "reliability": {"radio_floor": 0.90, "edge_floor": 0.94, "backhaul_floor": 0.96},
+  "aoi": {"fresh_update_aoi_s": 1.0, "max_safety_aoi_s": 4.0, "max_control_aoi_s": 2.0}
+}

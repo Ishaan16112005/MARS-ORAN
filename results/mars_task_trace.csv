@@ -1,0 +1,6 @@
+policy,seed,task_id,task_name,slice,start_s,finish_s,deadline_s,late_by_s,deadline_met,freshness_ok,reliability_ok,success,aoi_at_finish_s,reliability,criticality_max,mission_value
+MARS_RISK_AWARE,20,K1,Gas detection,SV,20,27,36,0,1,1,1,1,1.0,0.94835,8.0928,5.0
+MARS_RISK_AWARE,20,K2,Gas-source localization,SM,27,75,86,0,1,1,1,1,1.0,0.93653,13.5706,8.0
+MARS_RISK_AWARE,20,K3,UGV navigation to valve,SC,75,92,125,0,1,1,1,1,1.0,0.94214,18.279,10.0
+MARS_RISK_AWARE,20,K4,Valve inspection,SM,92,136,168,0,1,1,0,0,1.0,0.79932,15.7472,4.05
+MARS_RISK_AWARE,20,K5,Valve manipulation,SC,136,152,205,0,1,1,0,0,1.0,0.93368,20.9964,5.4

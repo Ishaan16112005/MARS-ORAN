@@ -1,0 +1,83 @@
+{
+  "mission_id": "gas_leak_valve_response_v1",
+  "tasks": [
+    {
+      "id": "K1",
+      "name": "Gas detection",
+      "predecessors": [],
+      "activation_s": 20,
+      "deadline_s": 36,
+      "workload_bits": 200000,
+      "compute_units": 20,
+      "value": 5,
+      "hazard_weight": 0.7,
+      "max_failure_prob": 0.08,
+      "max_aoi_s": 4,
+      "slice": "SV"
+    },
+    {
+      "id": "K2",
+      "name": "Gas-source localization",
+      "predecessors": [
+        "K1"
+      ],
+      "activation_s": 20,
+      "deadline_s": 86,
+      "workload_bits": 12000000,
+      "compute_units": 120,
+      "value": 8,
+      "hazard_weight": 0.8,
+      "max_failure_prob": 0.1,
+      "max_aoi_s": 5,
+      "slice": "SM"
+    },
+    {
+      "id": "K3",
+      "name": "UGV navigation to valve",
+      "predecessors": [
+        "K2"
+      ],
+      "activation_s": 20,
+      "deadline_s": 125,
+      "workload_bits": 1200000,
+      "compute_units": 55,
+      "value": 10,
+      "hazard_weight": 0.95,
+      "max_failure_prob": 0.06,
+      "max_aoi_s": 2,
+      "slice": "SC"
+    },
+    {
+      "id": "K4",
+      "name": "Valve inspection",
+      "predecessors": [
+        "K3"
+      ],
+      "activation_s": 20,
+      "deadline_s": 168,
+      "workload_bits": 7000000,
+      "compute_units": 100,
+      "value": 9,
+      "hazard_weight": 0.9,
+      "max_failure_prob": 0.08,
+      "max_aoi_s": 4,
+      "slice": "SM"
+    },
+    {
+      "id": "K5",
+      "name": "Valve manipulation",
+      "predecessors": [
+        "K4"
+      ],
+      "activation_s": 20,
+      "deadline_s": 205,
+      "workload_bits": 1000000,
+      "compute_units": 50,
+      "value": 12,
+      "hazard_weight": 1.0,
+      "max_failure_prob": 0.04,
+      "max_aoi_s": 2,
+      "slice": "SC"
+    }
+  ]
+}

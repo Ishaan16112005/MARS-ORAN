@@ -1,0 +1,509 @@
+{
+ "main.STATIC.mission_success_rate": "0.1867 [0.1667, 0.2000]",
+ "main.STATIC.deadline_success_rate": "0.2000 [0.2000, 0.2000]",
+ "main.STATIC.reliability_success_rate": "0.3600 [0.3267, 0.3867]",
+ "main.STATIC.total_reconfig_cost": "14.0000 [14.0000, 14.0000]",
+ "main.STATIC.mission_loss": "45.1583 [44.9750, 45.4333]",
+ "main.STATIC.CVaR90": "45.1583 [44.9750, 47.7250]",
+ "main.STATIC.full_mission_prob": 0.0,
+ "main.PROPORTIONAL.mission_success_rate": "0.1933 [0.1800, 0.2000]",
+ "main.PROPORTIONAL.deadline_success_rate": "0.1933 [0.1800, 0.2000]",
+ "main.PROPORTIONAL.reliability_success_rate": "0.4000 [0.3733, 0.4267]",
+ "main.PROPORTIONAL.total_reconfig_cost": "3413.8000 [3389.1317, 3437.8683]",
+ "main.PROPORTIONAL.mission_loss": "45.1250 [44.9750, 45.4250]",
+ "main.PROPORTIONAL.CVaR90": "45.1250 [44.9750, 49.4750]",
+ "main.PROPORTIONAL.full_mission_prob": 0.0,
+ "main.MISSION_AWARE.mission_success_rate": "0.7267 [0.6798, 0.7667]",
+ "main.MISSION_AWARE.deadline_success_rate": "1.0000 [1.0000, 1.0000]",
+ "main.MISSION_AWARE.reliability_success_rate": "0.7267 [0.6798, 0.7667]",
+ "main.MISSION_AWARE.total_reconfig_cost": "1828.5333 [1804.8000, 1851.4017]",
+ "main.MISSION_AWARE.mission_loss": "18.0700 [17.1350, 19.1883]",
+ "main.MISSION_AWARE.CVaR90": "24.5417 [20.8750, 29.6750]",
+ "main.MISSION_AWARE.full_mission_prob": 0.0,
+ "main.MARS_RISK_AWARE.mission_success_rate": "0.7067 [0.6600, 0.7467]",
+ "main.MARS_RISK_AWARE.deadline_success_rate": "1.0000 [1.0000, 1.0000]",
+ "main.MARS_RISK_AWARE.reliability_success_rate": "0.7067 [0.6600, 0.7467]",
+ "main.MARS_RISK_AWARE.total_reconfig_cost": "1029.6667 [986.1983, 1074.9350]",
+ "main.MARS_RISK_AWARE.mission_loss": "18.6383 [17.6300, 19.7750]",
+ "main.MARS_RISK_AWARE.CVaR90": "23.2583 [21.9750, 26.9250]",
+ "main.MARS_RISK_AWARE.full_mission_prob": 0.0,
+ "main.reconfig_reduction_vs_MA_pct": 43.6889,
+ "paired.STATIC.mission_loss": "-26.5200 [-27.5467, -25.4017] W/T/L=30/0/0 p=1.01e-06",
+ "paired.STATIC.total_reconfig_cost": "1015.6667 [972.1983, 1060.9350] W/T/L=0/0/30 p=1.73e-06",
+ "paired.STATIC.mission_success_rate": "0.5200 [0.4733, 0.5667] W/T/L=30/0/0 p=9.33e-07",
+ "paired.PROPORTIONAL.mission_loss": "-26.4867 [-27.4768, -25.4082] W/T/L=30/0/0 p=9.08e-07",
+ "paired.PROPORTIONAL.total_reconfig_cost": "-2384.1333 [-2432.4017, -2334.3267] W/T/L=30/0/0 p=1.73e-06",
+ "paired.PROPORTIONAL.mission_success_rate": "0.5133 [0.4667, 0.5533] W/T/L=30/0/0 p=8.38e-07",
+ "paired.MISSION_AWARE.mission_loss": "0.5683 [-0.5500, 1.6500] W/T/L=5/17/8 p=0.23",
+ "paired.MISSION_AWARE.total_reconfig_cost": "-798.8667 [-835.4017, -762.3983] W/T/L=30/0/0 p=1.73e-06",
+ "paired.MISSION_AWARE.mission_success_rate": "-0.0200 [-0.0667, 0.0267] W/T/L=5/17/8 p=0.468",
+ "loss.STATIC.mode": 44.975,
+ "cvar_beta.STATIC": {
+  "0.0": 45.158,
+  "0.5": 45.158,
+  "0.55": 45.158,
+  "0.7": 45.158,
+  "0.8": 45.158,
+  "0.85": 45.158,
+  "0.9": 45.158,
+  "0.95": 47.725
+ },
+ "loss.PROPORTIONAL.mode": 44.975,
+ "cvar_beta.PROPORTIONAL": {
+  "0.0": 45.125,
+  "0.5": 45.125,
+  "0.55": 45.125,
+  "0.7": 45.125,
+  "0.8": 45.125,
+  "0.85": 45.125,
+  "0.9": 45.125,
+  "0.95": 45.125
+ },
+ "loss.MISSION_AWARE.mode": 16.475,
+ "cvar_beta.MISSION_AWARE": {
+  "0.0": 18.07,
+  "0.5": 18.07,
+  "0.55": 18.07,
+  "0.7": 21.792,
+  "0.8": 22.525,
+  "0.85": 22.525,
+  "0.9": 24.542,
+  "0.95": 24.542
+ },
+ "loss.MARS_RISK_AWARE.mode": 16.475,
+ "cvar_beta.MARS_RISK_AWARE": {
+  "0.0": 18.638,
+  "0.5": 18.638,
+  "0.55": 18.638,
+  "0.7": 22.415,
+  "0.8": 23.258,
+  "0.85": 23.258,
+  "0.9": 23.258,
+  "0.95": 25.825
+ },
+ "tasks.K5.success_any_policy": 0,
+ "tasks.STATIC.deadline_fail_share_of_150": 0.8,
+ "tasks.STATIC.per_task_success": {
+  "K1": 0.933,
+  "K2": 0.0,
+  "K3": 0.0,
+  "K4": 0.0,
+  "K5": 0.0
+ },
+ "tasks.PROPORTIONAL.deadline_fail_share_of_150": 0.8067,
+ "tasks.PROPORTIONAL.per_task_success": {
+  "K1": 0.967,
+  "K2": 0.0,
+  "K3": 0.0,
+  "K4": 0.0,
+  "K5": 0.0
+ },
+ "tasks.MISSION_AWARE.deadline_fail_share_of_150": 0.0,
+ "tasks.MISSION_AWARE.per_task_success": {
+  "K1": 0.9,
+  "K2": 0.9,
+  "K3": 0.9,
+  "K4": 0.933,
+  "K5": 0.0
+ },
+ "tasks.MARS_RISK_AWARE.deadline_fail_share_of_150": 0.0,
+ "tasks.MARS_RISK_AWARE.per_task_success": {
+  "K1": 0.9,
+  "K2": 0.933,
+  "K3": 0.8,
+  "K4": 0.9,
+  "K5": 0.0
+ },
+ "tasks.K5.mean_start_s(MA,MARS)": 134.1833,
+ "tasks.mission_end_s(MA,MARS)": 150.4167,
+ "rel.sigma_threshold_for_0.96": 0.4606,
+ "rel.sigma_threshold_for_0.94(K3)": 0.7364,
+ "rel.p_succ_at_sigma0.8": 0.9354,
+ "latency.MISSION_AWARE.during_mission_mean_ms": 20.9408,
+ "latency.MISSION_AWARE.after_mission_mean_ms": 22.3741,
+ "latency.MARS_RISK_AWARE.during_mission_mean_ms": 20.8636,
+ "latency.MARS_RISK_AWARE.after_mission_mean_ms": 16.8152,
+ "severity.during_K5_mean": 0.7839,
+ "edge.K2_share_B100(MA,seed20)": "0.432 finish=72 deadline=86",
+ "edge.K2_share_B120(MA,seed20)": "0.365 finish=82 deadline=86",
+ "edge.K2_share_B150(MA,seed20)": "0.295 finish=96 deadline=86",
+ "sweep.prbs.B50": {
+  "STATIC": 0.0,
+  "PROPORTIONAL": 0.0,
+  "MISSION_AWARE": 0.0,
+  "MARS_RISK_AWARE": 0.0
+ },
+ "sweep.prbs.B55": {
+  "STATIC": 0.0,
+  "PROPORTIONAL": 0.0,
+  "MISSION_AWARE": 0.16,
+  "MARS_RISK_AWARE": 0.167
+ },
+ "sweep.prbs.B60": {
+  "STATIC": 0.0,
+  "PROPORTIONAL": 0.0,
+  "MISSION_AWARE": 0.293,
+  "MARS_RISK_AWARE": 0.293
+ },
+ "sweep.prbs.B70": {
+  "STATIC": 0.0,
+  "PROPORTIONAL": 0.06,
+  "MISSION_AWARE": 0.553,
+  "MARS_RISK_AWARE": 0.547
+ },
+ "sweep.prbs.B80": {
+  "STATIC": 0.187,
+  "PROPORTIONAL": 0.187,
+  "MISSION_AWARE": 0.693,
+  "MARS_RISK_AWARE": 0.7
+ },
+ "sweep.prbs.B100": {
+  "STATIC": 0.187,
+  "PROPORTIONAL": 0.193,
+  "MISSION_AWARE": 0.727,
+  "MARS_RISK_AWARE": 0.707
+ },
+ "sweep.prbs.B120": {
+  "STATIC": 0.187,
+  "PROPORTIONAL": 0.193,
+  "MISSION_AWARE": 0.7,
+  "MARS_RISK_AWARE": 0.6
+ },
+ "sweep.prbs.B150": {
+  "STATIC": 0.187,
+  "PROPORTIONAL": 0.187,
+  "MISSION_AWARE": 0.22,
+  "MARS_RISK_AWARE": 0.193
+ },
+ "sweep.prbs.B200": {
+  "STATIC": 0.187,
+  "PROPORTIONAL": 0.18,
+  "MISSION_AWARE": 0.173,
+  "MARS_RISK_AWARE": 0.173
+ },
+ "sweep.sev.0.0": {
+  "STATIC": "0.427 [0.373,0.480] cvar=45.66",
+  "PROPORTIONAL": "0.687 [0.633,0.740] cvar=31.77",
+  "MISSION_AWARE": "0.907 [0.847,0.960] cvar=21.24",
+  "MARS_RISK_AWARE": "0.960 [0.927,0.987] cvar=17.16"
+ },
+ "sweep.sev.0.2": {
+  "STATIC": "0.193 [0.180,0.200] cvar=45.07",
+  "PROPORTIONAL": "0.227 [0.207,0.253] cvar=44.98",
+  "MISSION_AWARE": "0.860 [0.800,0.913] cvar=23.26",
+  "MARS_RISK_AWARE": "0.947 [0.900,0.987] cvar=17.94"
+ },
+ "sweep.sev.0.4": {
+  "STATIC": "0.180 [0.153,0.200] cvar=47.73",
+  "PROPORTIONAL": "0.193 [0.180,0.200] cvar=45.07",
+  "MISSION_AWARE": "0.733 [0.693,0.767] cvar=22.07",
+  "MARS_RISK_AWARE": "0.720 [0.673,0.760] cvar=23.49"
+ },
+ "sweep.sev.0.8": {
+  "STATIC": "0.087 [0.053,0.120] cvar=47.83",
+  "PROPORTIONAL": "0.113 [0.073,0.147] cvar=47.86",
+  "MISSION_AWARE": "0.373 [0.347,0.393] cvar=30.50",
+  "MARS_RISK_AWARE": "0.347 [0.313,0.373] cvar=31.33"
+ },
+ "sweep.sev.0.9": {
+  "STATIC": "0.000 [0.000,0.000] cvar=47.78",
+  "PROPORTIONAL": "0.000 [0.000,0.000] cvar=47.78",
+  "MISSION_AWARE": "0.360 [0.333,0.387] cvar=31.33",
+  "MARS_RISK_AWARE": "0.333 [0.293,0.367] cvar=31.78"
+ },
+ "sweep.sev.1.0": {
+  "STATIC": "0.000 [0.000,0.000] cvar=47.78",
+  "PROPORTIONAL": "0.000 [0.000,0.000] cvar=49.48",
+  "MISSION_AWARE": "0.353 [0.313,0.387] cvar=31.88",
+  "MARS_RISK_AWARE": "0.340 [0.293,0.380] cvar=34.09"
+ },
+ "sweep.shock.0.0": {
+  "STATIC": 0.2,
+  "PROPORTIONAL": 0.2,
+  "MISSION_AWARE": 0.78,
+  "MARS_RISK_AWARE": 0.78
+ },
+ "sweep.shock.0.3": {
+  "STATIC": 0.047,
+  "PROPORTIONAL": 0.007,
+  "MISSION_AWARE": 0.16,
+  "MARS_RISK_AWARE": 0.133
+ },
+ "sweep.deadline.0.5": {
+  "STATIC": "0.000 [0.000,0.000]",
+  "PROPORTIONAL": "0.000 [0.000,0.000]",
+  "MISSION_AWARE": "0.180 [0.160,0.200]",
+  "MARS_RISK_AWARE": "0.180 [0.153,0.200]"
+ },
+ "sweep.deadline.0.6": {
+  "STATIC": "0.000 [0.000,0.000]",
+  "PROPORTIONAL": "0.000 [0.000,0.000]",
+  "MISSION_AWARE": "0.180 [0.160,0.200]",
+  "MARS_RISK_AWARE": "0.180 [0.153,0.200]"
+ },
+ "sweep.deadline.0.7": {
+  "STATIC": "0.000 [0.000,0.000]",
+  "PROPORTIONAL": "0.000 [0.000,0.000]",
+  "MISSION_AWARE": "0.360 [0.320,0.393]",
+  "MARS_RISK_AWARE": "0.280 [0.233,0.320]"
+ },
+ "sweep.deadline.0.8": {
+  "STATIC": "0.120 [0.087,0.153]",
+  "PROPORTIONAL": "0.007 [0.000,0.020]",
+  "MISSION_AWARE": "0.580 [0.520,0.633]",
+  "MARS_RISK_AWARE": "0.487 [0.433,0.533]"
+ },
+ "sweep.deadline.0.9": {
+  "STATIC": "0.187 [0.167,0.200]",
+  "PROPORTIONAL": "0.067 [0.033,0.100]",
+  "MISSION_AWARE": "0.727 [0.680,0.767]",
+  "MARS_RISK_AWARE": "0.707 [0.660,0.747]"
+ },
+ "sweep.deadline.1.5": {
+  "STATIC": "0.360 [0.327,0.387]",
+  "PROPORTIONAL": "0.400 [0.373,0.427]",
+  "MISSION_AWARE": "0.727 [0.680,0.767]",
+  "MARS_RISK_AWARE": "0.707 [0.660,0.747]"
+ },
+ "sweep.workload.0.25": {
+  "STATIC": 0.587,
+  "PROPORTIONAL": 0.52,
+  "MISSION_AWARE": 0.727,
+  "MARS_RISK_AWARE": 0.707
+ },
+ "sweep.workload.0.25.tasks_observed": {
+  "STATIC": 5.0,
+  "PROPORTIONAL": 5.0,
+  "MISSION_AWARE": 5.0,
+  "MARS_RISK_AWARE": 5.0
+ },
+ "sweep.workload.0.5": {
+  "STATIC": 0.427,
+  "PROPORTIONAL": 0.52,
+  "MISSION_AWARE": 0.707,
+  "MARS_RISK_AWARE": 0.7
+ },
+ "sweep.workload.0.5.tasks_observed": {
+  "STATIC": 5.0,
+  "PROPORTIONAL": 5.0,
+  "MISSION_AWARE": 5.0,
+  "MARS_RISK_AWARE": 5.0
+ },
+ "sweep.workload.1.25": {
+  "STATIC": 0.12,
+  "PROPORTIONAL": 0.0,
+  "MISSION_AWARE": 0.58,
+  "MARS_RISK_AWARE": 0.42
+ },
+ "sweep.workload.1.25.tasks_observed": {
+  "STATIC": 4.07,
+  "PROPORTIONAL": 4.9,
+  "MISSION_AWARE": 5.0,
+  "MARS_RISK_AWARE": 5.0
+ },
+ "sweep.workload.1.5": {
+  "STATIC": 0.0,
+  "PROPORTIONAL": 0.0,
+  "MISSION_AWARE": 0.2,
+  "MARS_RISK_AWARE": 0.173
+ },
+ "sweep.workload.1.5.tasks_observed": {
+  "STATIC": 3.0,
+  "PROPORTIONAL": 4.0,
+  "MISSION_AWARE": 5.0,
+  "MARS_RISK_AWARE": 5.0
+ },
+ "sweep.workload.2.0": {
+  "STATIC": 0.0,
+  "PROPORTIONAL": 0.0,
+  "MISSION_AWARE": 0.173,
+  "MARS_RISK_AWARE": 0.18
+ },
+ "sweep.workload.2.0.tasks_observed": {
+  "STATIC": 3.0,
+  "PROPORTIONAL": 3.0,
+  "MISSION_AWARE": 5.0,
+  "MARS_RISK_AWARE": 5.0
+ },
+ "sweep.workload.3.0": {
+  "STATIC": 0.0,
+  "PROPORTIONAL": 0.0,
+  "MISSION_AWARE": 0.107,
+  "MARS_RISK_AWARE": 0.0
+ },
+ "sweep.workload.3.0.tasks_observed": {
+  "STATIC": 1.4,
+  "PROPORTIONAL": 2.0,
+  "MISSION_AWARE": 3.0,
+  "MARS_RISK_AWARE": 3.0
+ },
+ "grid.max_abs_diff_MARS_vs_MA": 0.1,
+ "grid.cells_adaptive_below_nonadaptive": [],
+ "sweep.risk_aversion": {
+  "0.0": [
+   0.72,
+   875.3
+  ],
+  "0.2": [
+   0.707,
+   929.1
+  ],
+  "0.4": [
+   0.7,
+   997.4
+  ],
+  "0.55": [
+   0.707,
+   1029.7
+  ],
+  "0.7": [
+   0.7,
+   981.6
+  ],
+  "0.85": [
+   0.7,
+   873.4
+  ],
+  "1.0": [
+   0.68,
+   805.9
+  ]
+ },
+ "sweep.hold_time_s": {
+  "0": [
+   0.727,
+   2908.3
+  ],
+  "1": [
+   0.727,
+   2908.3
+  ],
+  "2": [
+   0.727,
+   1681.1
+  ],
+  "4": [
+   0.707,
+   1029.7
+  ],
+  "6": [
+   0.7,
+   770.7
+  ],
+  "8": [
+   0.673,
+   635.4
+  ],
+  "12": [
+   0.687,
+   443.5
+  ],
+  "20": [
+   0.647,
+   326.9
+  ]
+ },
+ "sweep.max_reconfig_per_step": {
+  "1": [
+   0.533,
+   241.9
+  ],
+  "2": [
+   0.6,
+   384.1
+  ],
+  "4": [
+   0.64,
+   570.6
+  ],
+  "8": [
+   0.68,
+   826.5
+  ],
+  "16": [
+   0.707,
+   1029.7
+  ],
+  "32": [
+   0.733,
+   1104.8
+  ],
+  "64": [
+   0.687,
+   1122.3
+  ]
+ },
+ "ablation": {
+  "MARS-full": [
+   0.707,
+   1029.7,
+   23.26
+  ],
+  "no-AoI": [
+   0.707,
+   1029.7,
+   23.26
+  ],
+  "no-urgency": [
+   0.707,
+   1029.7,
+   23.26
+  ],
+  "no-risk-reserve": [
+   0.727,
+   762.2,
+   24.54
+  ],
+  "no-hysteresis": [
+   0.727,
+   2908.3,
+   24.54
+  ],
+  "no-reconfig-penalty": [
+   0.713,
+   745.8,
+   23.21
+  ],
+  "no-criticality-terms": [
+   0.707,
+   1029.7,
+   23.26
+  ],
+  "no-reserve+no-hysteresis": [
+   0.727,
+   1743.8,
+   24.54
+  ]
+ },
+ "saturation.mission_window_seed20": "20-152",
+ "saturation.min_max_weight_in_mission": 0.9997,
+ "B120.MISSION_AWARE.K2_deadline_miss": 0.0,
+ "B120.MISSION_AWARE.K3_reliability_fail": 0.2667,
+ "B120.MARS_RISK_AWARE.K2_deadline_miss": 0.1333,
+ "B120.MARS_RISK_AWARE.K3_reliability_fail": 0.4667,
+ "grid.sev0.8_B120": {
+  "MARS_RISK_AWARE": 0.173,
+  "MISSION_AWARE": 0.207,
+  "PROPORTIONAL": 0.187,
+  "STATIC": 0.187
+ },
+ "grid.sev1.0_B60": {
+  "MARS_RISK_AWARE": 0.0,
+  "MISSION_AWARE": 0.0,
+  "PROPORTIONAL": 0.0,
+  "STATIC": 0.0
+ },
+ "grid.sev0.2_B100": {
+  "MARS_RISK_AWARE": 0.947,
+  "MISSION_AWARE": 0.86,
+  "PROPORTIONAL": 0.227,
+  "STATIC": 0.193
+ },
+ "grid.sev0.6_B120": {
+  "MARS_RISK_AWARE": 0.6,
+  "MISSION_AWARE": 0.7,
+  "PROPORTIONAL": 0.193,
+  "STATIC": 0.187
+ },
+ "runtime.four_policies_one_seed_s": 0.1323
+}

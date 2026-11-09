@@ -1,0 +1,31 @@
+MAIN NETWORK SLICING / OPTIMIZATION CODE
+---------------------------------------
+src/simulator.py
+  - MARSOranSimulator.task_criticality(): mission criticality score
+  - MARSOranSimulator.policy_weights(): fixed / proportional / mission-aware / MARS risk-aware allocation weights
+  - MARSOranSimulator.allocate_prbs(): integer PRB allocation and constraints
+  - MARSOranSimulator.step(): radio/MEC/AoI/reliability/task progression
+  - run_experiments(): Monte Carlo comparison
+  - sensitivity_experiment(): PRB/severity sweep
+  - ablation_experiment(): component ablation
+
+CONFIGURATION
+-------------
+config/scenario_v2.json
+config/tasks_v2.json
+
+LIVE DASHBOARD
+--------------
+python src/web_server.py
+Then open http://127.0.0.1:8765
+
+PAPER
+-----
+paper/MARS_ORAN_Research_Paper_v2.tex
+paper/MARS_ORAN_Research_Paper_v2.pdf
+src/edge_case_experiments.py: statistics, edge-case sweeps and paper figures
+
+TESTS
+-----
+python src/validate_config.py
+python -m unittest discover -s tests -v
